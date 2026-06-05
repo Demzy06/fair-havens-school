@@ -1,51 +1,28 @@
 import { Link } from "react-router";
-import SubLinks from "./SubLinks";
+import Nav from "./Nav";
 
-const aboutUsNavSubLinks = [
-  "History",
-  "Founders Note",
-  "School Pledge And Anthem",
-  "Gallery",
-];
-const schoolsNavSubLinks = ["Nursery And Primary", "Secondary And Highschool"];
-
-const academicNavSubLinks = [
-  "Secondary Programs",
-  "Primary Programs",
-  "Creche And Primary Programs",
+const subNavLinkName = [
+  "About",
+  "Schools",
+  "Academic",
+  "Admissions",
+  "Students",
 ];
 
-const admissionsNavSubLinks = [
-  "Tuition",
-  "Admission Process",
-  "Admission Exams And Result",
+const allNavSubLinkArr = [
+  ["History", "Founders Note", "School Pledge And Anthem", "Gallery"],
+  ["Nursery And Primary", "Secondary And Highschool"],
+  ["Secondary Programs", "Primary Programs", "Creche And Primary Programs"],
+  ["Tuition", "Admission Process", "Admission Exams And Result"],
+  ["Co-curricular Activities And Clubs"],
 ];
-
-const studentNavSubLinks = ["Co-curricular Activities And Clubs"];
 
 function NavBar() {
   return (
-    <ul>
-      <li>
-        <span>About Us</span>
-        <SubLinks navSubLinks={aboutUsNavSubLinks} />
-      </li>
-      <li>
-        <span>Schools</span>
-        <SubLinks navSubLinks={schoolsNavSubLinks} />
-      </li>
-      <li>
-        <span>Academics</span>
-        <SubLinks navSubLinks={academicNavSubLinks} />
-      </li>
-      <li>
-        <span>Admissions</span>
-        <SubLinks navSubLinks={admissionsNavSubLinks} />
-      </li>
-      <li>
-        <span>Student Life</span>
-        <SubLinks navSubLinks={studentNavSubLinks} />
-      </li>
+    <ul className="text-center text-[15px]">
+      {subNavLinkName.map((name, i) => (
+        <Nav navName={name} navSubLinks={allNavSubLinkArr[i]} />
+      ))}
       <li>
         <Link to="contact">Contact</Link>
       </li>
