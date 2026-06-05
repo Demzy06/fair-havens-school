@@ -1,8 +1,8 @@
 import { Link } from "react-router";
-
-function SubLinks({ navSubLinks }) {
+function SubNavigationLinks({ navSubLinks }) {
+  console.log(navSubLinks);
   return (
-    <ul>
+    <ul className="mb-5">
       {navSubLinks.map((navs, i) => (
         <li>
           <Link to={navSubLinks[i].toLowerCase().replaceAll(" ", "-")}>
@@ -14,4 +14,4 @@ function SubLinks({ navSubLinks }) {
   );
 }
 
-export default SubLinks;
+export default SubNavigationLinks;
