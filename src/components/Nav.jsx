@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SubNavigationLinks from "./SubLinks";
+import SubNavigationLinks from "./SubNavigationLinks";
 function Nav({ navName, navSubLinks, subNavClassName }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -7,8 +7,8 @@ function Nav({ navName, navSubLinks, subNavClassName }) {
     setIsOpen(!isOpen);
   }
   return (
-    <li className={navName}>
-      <span className="flex ">
+    <li className="mb-4">
+      <span className="flex mb-2">
         <span className="m-auto w-fit">{navName}</span>
         <button className="cursor-pointer" onClick={(e) => handleOpenSubNav(e)}>
           x
