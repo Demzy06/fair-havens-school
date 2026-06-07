@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import Nav from "./Nav";
 
 const subNavLinkName = [
-  "About",
+  "About Us",
   "Schools",
   "Academic",
   "Admissions",
@@ -19,14 +19,18 @@ const allNavSubLinkArr = [
 
 function NavBar() {
   return (
-    <ul className="text-center text-[15px]">
-      {subNavLinkName.map((name, i) => (
-        <Nav navName={name} navSubLinks={allNavSubLinkArr[i]} />
-      ))}
-      <li>
-        <Link to="contact">Contact</Link>
-      </li>
-    </ul>
+    <nav className="h-dvh">
+      <ul className="text-center text-[14px] mt-9 w-[95%] m-auto font-[poppins] ">
+        {subNavLinkName.map((name, i) => (
+          <Nav navName={name.toUpperCase()} navSubLinks={allNavSubLinkArr[i]} />
+        ))}
+        <li>
+          <Link to="contact" className="uppercase">
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
