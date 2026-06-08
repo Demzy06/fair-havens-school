@@ -15,14 +15,17 @@ import AdmissionExamsAndResult from "./pages/AdmissionExamsAndResult";
 import CoCurricular from "./pages/CoCurricular";
 import ContactUs from "./pages/ContactUs.jsx";
 import SecondarySchool from "./pages/SecondarySchool";
+import FairAtAGlance from "./pages/FairAtAGlance.jsx";
+import PrincipalNote from "./pages/PrincipalNote.jsx";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="fair-havens-at-a-glance" element={<Homepage />} />
+        <Route path="fair-havens-at-a-glance" element={<FairAtAGlance />} />
         <Route path="history" element={<History />} />
         <Route path="founders-note" element={<FoundersNote />} />
+        <Route path="principal-note" element={<PrincipalNote />} />
         <Route path="school-pledge-and-anthem" element={<SchoolAnthem />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="nursery-and-primary" element={<NurseryAndPrimary />} />
