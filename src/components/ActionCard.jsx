@@ -13,7 +13,8 @@ function ActionCard({ info }) {
           }}
         />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-color " />
+        <div className="absolute inset-0 bg-[#0F2D52]/40 rounded-xl" />
+        {/* <div className="absolute inset-0 bg-color " /> */}
         {/* Content */}
         <h3 className="w-fit m-auto relative z-1  zo">{info.heading}</h3>
       </div>
