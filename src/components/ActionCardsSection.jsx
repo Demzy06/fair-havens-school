@@ -29,7 +29,7 @@ function ActionCardsSection() {
       </div>
       <div className="pr-3 pl-3">
         {divsInfo.map((info) => (
-          <ActionCard info={info} />
+          <ActionCard info={info} key={info.heading} />
         ))}
       </div>
       <div className="pr-2 pl-2">
