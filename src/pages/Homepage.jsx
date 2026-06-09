@@ -2,6 +2,7 @@ import AboutOurSchool from "../components/AboutOurSchool";
 import ActionCardsSection from "../components/ActionCardsSection";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
+import SchoolStats from "../components/SchoolStats";
 function Homepage() {
   return (
     <>
@@ -10,6 +11,7 @@ function Homepage() {
         <HeroSection />
         <ActionCardsSection />
         <AboutOurSchool />
+        <SchoolStats />
       </main>
     </>
   );
