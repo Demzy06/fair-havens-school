@@ -7,9 +7,9 @@ import SchoolStats from "../components/SchoolStats";
 function Homepage() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <HeroSection />
       <main>
-        <HeroSection />
         <ActionCardsSection />
         <AboutOurSchool />
         <SchoolStats />
