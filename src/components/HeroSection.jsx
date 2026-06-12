@@ -1,9 +1,11 @@
 import Button from "./Button";
+import Header from "./Header";
 
 function HeroSection() {
   return (
-    <section>
-      <div className="text-center pt-22 pb-22 hey">
+    <section className="hey">
+      <Header />
+      <div className="text-center pt-22 pb-22 ">
         <h1 className="w-[80%] m-auto mb-6 uppercase zo">
           Fair Havens Schools
         </h1>
