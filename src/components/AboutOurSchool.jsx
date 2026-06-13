@@ -30,7 +30,7 @@ const schoolInfoCards = [
 
 function AboutOurSchool() {
   return (
-    <section className="p-8 bg-smooth inset-0 bg-linear-to-br from-[#4DA6FF]/50 to-white/50 relative">
+    <section className="p-8 pl-6 pr-6 bg-smooth inset-0 bg-linear-to-br from-[#4DA6FF]/50 to-white/50 relative">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -41,14 +41,14 @@ function AboutOurSchool() {
           zIndex: "-1",
         }}
       />
-      {schoolInfoCards.map((card) => (
-        <div className="mb-9 p-6 bg-blue-opacity">
+      {schoolInfoCards.map((card, i) => (
+        <div className="mb-9 p-6 bg-blue-opacity" key={i}>
           <h3 className="mb-8 text-white">{card.title}</h3>
           <p className="mb-12 leading-6  text-white">{card.text}</p>
           <Button
             text="Learn More"
             link={card.path}
-            className="bg-transparent text-white border-2 border-white p-2 pl-5 pr-5"
+            className="bg-transparent text-white border-2 border-white p-2 pl-5 pr-5 text-[14px]"
           />
         </div>
       ))}
