@@ -25,7 +25,10 @@ function ActionCardsSection() {
         <h1 className="text-white mb-14 zo">
           Créche, Nursery, Primary & Secondary
         </h1>
-        <img src="/src/assets/building-3.jpg" />
+        {/* <div className="flex justify-center w-[90%] h-[22rem] m-auto">
+          <img src="/src/assets/image.png" className="w-[80%]" />
+        </div> */}
+        <img src="/src/assets/image.png" className="w-[80%] m-auto" />
       </div>
       <div className="pr-3 pl-3">
         {divsInfo.map((info) => (
