@@ -19,8 +19,8 @@ const allNavSubLinkArr = [
 
 function NavBar({ navIsOpen }) {
   return (
-    <nav className={`h-screen bg-white ${navIsOpen ? "navAnimation " : ""} `}>
-      <ul className="text-center text-[14px] mt-1 w-[95%] m-auto font-[poppins]">
+    <nav className={`h-screen bg-white ${navIsOpen ? "navAnimation" : ""}  `}>
+      <ul className="text-center text-[14px] w-[95%] m-auto font-[poppins]">
         {subNavLinkName.map((name, i) => (
           <Nav navName={name.toUpperCase()} navSubLinks={allNavSubLinkArr[i]} />
         ))}
