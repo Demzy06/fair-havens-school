@@ -1,29 +1,48 @@
 import NavBar from "../components/NavBar";
 import Logo from "../components/Logo";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import HamburgerIcon from "@iconify-react/quill/hamburger";
 import CancelIcon from "@iconify-react/iconoir/cancel";
 
 function Header() {
   const [navIsOpen, setNavISOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const headerEl = useRef(null);
+
+  useEffect(function () {
+    const headerHeight = headerEl.current.getBoundingClientRect().height;
+    console.log(headerHeight);
+    function handleScroll() {
+      setIsSticky(window.scrollY > headerHeight);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header className="relative z-10">
-        <div className="flex justify-between bg-transparent fixed top-0 right-0 left-0">
+      <header
+        ref={headerEl}
+        className={` ${!navIsOpen ? `${isSticky && "fixed bg-white transition-all duration-300 ease-in-out"}` : "fixed"} absolute pr-0 pl-0 w-full  top-0 left-0 z-100 `}
+      >
+        <div
+          className={`flex justify-between pr-2 pl-2 p-1 ${navIsOpen ? "bg-white" : ""}`}
+        >
           {navIsOpen ? "" : <Logo />}
-          <button
-            onClick={() => setNavISOpen(!navIsOpen)}
-            className="flex ml-auto self-center"
-          >
+          <button onClick={() => setNavISOpen(!navIsOpen)} className="ml-auto">
             {navIsOpen ? (
               <CancelIcon height="2.5em" />
             ) : (
-              <HamburgerIcon height="2em" />
+              <HamburgerIcon height="2.3em" />
             )}
           </button>
         </div>
+        {navIsOpen && <NavBar navIsOpen={navIsOpen} />}
       </header>
-      {navIsOpen ? <NavBar /> : null}
     </>
   );
 }
