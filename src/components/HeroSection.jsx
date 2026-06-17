@@ -6,7 +6,7 @@ function HeroSection() {
     <section className="hey">
       <Header />
       <div className="text-center pt-22 pb-22 ">
-        <h1 className="w-[80%] m-auto mb-6 uppercase zo">
+        <h1 className="w-[80%] m-auto mb-6 uppercase whiteColorShadow">
           Fair Havens Schools
         </h1>
         <p className="w-[80%] m-auto mb-6 font-medium text-white ">
