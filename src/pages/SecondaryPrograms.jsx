@@ -81,65 +81,6 @@ function SecondaryPrograms() {
           thirdParagraph={seniorSchoolContent.thirdParagraph}
         />
         <AcademicsSubjectTaught subjectArr={seniorSubjectTaught} />
-        {/* <div className="pt-20 pb-20 pl-5 pr-5 bgBlueLogo">
-          <h1 className="mb-10">Senior Secondary School</h1>
-          <h2 className="mb-10">SS1 to SS3</h2>
-          <p className="mb-3 ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-            quibusdam id alias commodi placeat quo voluptates consequuntur
-            optio? Eius, atque sapiente? Voluptatum totam quo quasi illo quidem
-            in cupiditate maxime.
-          </p>
-          <p className="mb-3">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-            quibusdam id alias commodi placeat quo voluptates consequuntur
-            optio? Eius, atque sapiente? Voluptatum totam quo quasi illo quidem
-            in cupiditate maxime.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-            quibusdam id alias commodi placeat quo voluptates consequuntur
-            optio? Eius, atque sapiente? Voluptatum totam quo quasi illo quidem
-            in cupiditate maxime.
-          </p>
-        </div>
-
-        <div className="pl-5 pr-5 p-8 ">
-          <div className="">
-            <h4 className="font-medium  p-3 pr-1 pl-5 bg-[#EAF5E4] -z-10 rounded-t-xl uppercase">
-              Subjects Taught
-            </h4>
-            <ul className=" pb-10 pl-5 pt-3 flex flex-wrap bg-[#f1f3f0] rounded-b-xl">
-              <li className="mr-5 bg-amber-200 p-[2px] pl-3 pr-3 rounded-md text-sm font-medium mb-2">
-                Mathematics
-              </li>
-              <li className="mr-5 bg-amber-200 p-[2px] pl-3 pr-3 rounded-md text-sm font-medium mb-2">
-                Mathematics
-              </li>
-              <li className="mr-5 bg-amber-200 p-[2px] pl-3 pr-3 rounded-md text-sm font-medium mb-2">
-                ICT
-              </li>
-              <li className="mr-5 bg-amber-200 p-[2px] pl-3 pr-3 rounded-md text-sm font-medium mb-2">
-                Mathematics
-              </li>
-              <li className="mr-5 bg-amber-200 p-[2px] pl-3 pr-3 rounded-md text-sm font-medium mb-2">
-                ICT
-              </li>
-              <li className="mr-5 bg-amber-200 p-[2px] pl-3 pr-3 rounded-md text-sm font-medium mb-2">
-                History
-              </li>
-              <li className="mr-5 bg-amber-200 p-[2px] pl-3 pr-3 rounded-md text-sm font-medium mb-2">
-                Mathematics
-              </li>
-              <li className="mr-5 bg-amber-200 p-[2px] pl-3 pr-3 rounded-md text-sm font-medium mb-2">
-                Mathematics
-              </li>
-              <li className="mr-5 bg-amber-200 p-[2px] pl-3 pr-3 rounded-md text-sm font-medium mb-2">
-                ICT
-              </li>
-            </ul>
-          </div>
-        </div> */}
       </div>
       <Footer />
     </>
