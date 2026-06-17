@@ -25,7 +25,7 @@ function NavBar({ navIsOpen }) {
           <Nav navName={name.toUpperCase()} navSubLinks={allNavSubLinkArr[i]} />
         ))}
         <li>
-          <Link to="contact" className="uppercase">
+          <Link to="/contact" className="uppercase">
             Contact
           </Link>
         </li>
