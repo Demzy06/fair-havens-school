@@ -1,1 +1,100 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    /* padding: 10px; */
+    font-family: "poppins", sans-serif;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+}
+
+@layer components {
+  .hey {
+    background-image: url("/src/assets/building-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .ctaBtn {
+    @apply text-black p-7 pt-2 pb-2 bg-white uppercase text-[13px];
+  }
+
+  .bgBlueLogo {
+    @apply text-gray-200 bg-[linear-gradient(rgba(77,166,255,0.85),rgba(77,166,255,0.85)),url(/src/assets/logos-pic.jpg)] bg-contain bg-center bg-repeat;
+  }
+}
+
+@layer utilities {
+  .touch {
+    background-image:
+      linear-gradient(rgb(15, 45, 82, 0.4)), url("/src/assets/building-3.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .actionCardSection {
+    background-image:
+      linear-gradient(rgba(77, 166, 255, 1), rgba(77, 166, 255, 0.2)),
+      url("/src/assets/building-3.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .whiteColorShadow {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+  }
+  .bg-color {
+    background-color: rgba(77, 166, 255, 0.25);
+    border-radius: 12px;
+  }
+  .border-gray {
+    border-color: #f8f9fa;
+  }
+  .bg-blue-opacity {
+    background-color: rgba(77, 166, 255, 0.8);
+  }
+  .fixed {
+    position: fixed;
+  }
+  @keyframes navmove {
+    from {
+      transform: translateY(-100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+  .navAnimation {
+    animation: navmove 0.5s ease;
+  }
+  @keyframes nav-remove {
+    from {
+      transform: translateY(0);
+    }
+
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  .navAnimationRemove {
+    animation: nav-remove 0.5s;
+  }
+  .academic-content-bg {
+    @apply bg-[#F7F9F6];
+  }
+}
