@@ -5,7 +5,8 @@ import FlyerImg from "../assets/image.png";
 import img1 from "../assets/excitedKids.jpeg";
 import img2 from "../assets/comp-lab-pic.jpeg";
 import img3 from "../assets/classroom-pic.jpeg";
-import ClassroomImg from "../assets/building-3.jpg";
+import ClassroomImg from "../assets/classroom-pic.jpeg";
+// import ClassroomImg from "../assets/building-3.jpg";
 const divsInfo = [
   {
     heading: "Schedule A Visit",
