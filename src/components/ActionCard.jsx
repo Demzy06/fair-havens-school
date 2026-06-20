@@ -12,11 +12,14 @@ function ActionCard({ info }) {
             borderRadius: "12px",
           }}
         />
+
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#0F2D52]/40 rounded-xl" />
-        {/* <div className="absolute inset-0 bg-color " /> */}
+
         {/* Content */}
-        <h3 className="w-fit m-auto relative z-1  zo">{info.heading}</h3>
+        <h3 className="w-fit m-auto relative z-1 whiteColorShadow">
+          {info.heading}
+        </h3>
       </div>
     </Link>
   );
