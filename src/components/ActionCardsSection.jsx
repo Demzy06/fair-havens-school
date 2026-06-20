@@ -1,5 +1,7 @@
 import ActionCard from "./ActionCard";
 import Button from "./Button";
+
+import FlyerImg from "../assets/image.png";
 const divsInfo = [
   {
     heading: "Schedule A Visit",
@@ -25,7 +27,7 @@ function ActionCardsSection() {
         <h1 className="text-white mb-14 whiteColorShadow">
           Créche, Nursery, Primary & Secondary
         </h1>
-        <img src="/assets/image.png" className="w-[80%] m-auto" />
+        <img src={FlyerImg} className="w-[80%] m-auto" />
       </div>
       <div className="pr-3 pl-3">
         {divsInfo.map((info) => (
