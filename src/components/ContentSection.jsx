@@ -10,7 +10,9 @@ function ContentSection({
   return (
     <div className={`pb-20 pt-15 ${className}`}>
       {headerText && (
-        <h1 className="w-[90%] m-auto text-center pt-1 mb-13">{headerText}</h1>
+        <h1 className="w-[90%] m-auto text-center pt-1 mb-13 text-[#67B3FF]">
+          {headerText}
+        </h1>
       )}
 
       <div className="pl-5 pr-5">
