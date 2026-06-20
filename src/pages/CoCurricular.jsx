@@ -31,15 +31,17 @@ function CoCurricular() {
           title={activityClub.clubType}
           description={activityClub.statement}
           items={activityClub.clubActivities}
-          className="text-gray-200 bg-[linear-gradient(rgba(77,166,255,0.85),rgba(77,166,255,0.85)),url(/src/assets/logos-pic.jpg)] bg-contain bg-center bg-repeat"
+          paragraphColor="text-gray-800"
+          headingColor="text-gray-800"
         />
 
         <ContentSection
           title={subjectBasedClub.clubType}
           description={subjectBasedClub.statement}
           items={subjectBasedClub.clubActivities}
-          headingColor="text-[#67B3FF]"
-          paragraphColor="text-gray-800"
+          headingColor="text-gray-200"
+          paragraphColor="text-gray-200"
+          className="text-gray-200 bg-[linear-gradient(rgba(77,166,255,0.85),rgba(77,166,255,0.85)),url(/src/assets/logos-pic.jpg)] bg-contain bg-center bg-repeat"
         />
       </section>
       <Footer />
