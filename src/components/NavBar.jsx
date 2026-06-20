@@ -12,7 +12,7 @@ const subNavLinkName = [
 const allNavSubLinkArr = [
   ["History", "Founders Note", "School Pledge And Anthem", "Gallery"],
   ["Nursery And Primary", "Secondary And Highschool"],
-  ["Secondary Programs", "Primary Programs", "Creche And Primary Programs"],
+  ["Secondary Programs", "Primary Programs", "Creche And Nursery Programs"],
   ["Tuition", "Admission Process", "Admission Exams And Result"],
   ["Co-curricular Activities And Clubs"],
 ];
