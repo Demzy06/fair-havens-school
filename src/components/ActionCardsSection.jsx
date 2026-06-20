@@ -2,21 +2,24 @@ import ActionCard from "./ActionCard";
 import Button from "./Button";
 
 import FlyerImg from "../assets/image.png";
+import img1 from "../assets/excitedKids.jpeg";
+import img2 from "../assets/comp-lab-pic.jpeg";
+import img3 from "../assets/classroom-pic.jpeg";
 const divsInfo = [
   {
     heading: "Schedule A Visit",
     linkTo: "contact-us",
-    image: "/src/assets/excitedKids.jpeg",
+    image: img1,
   },
   {
     heading: "Student Life",
     linkTo: "co-curricular-activities-and-clubs",
-    image: "/src/assets/comp-lab-pic.jpeg",
+    image: img2,
   },
   {
     heading: "Apply Today",
     linkTo: "admission-process",
-    image: "/src/assets/classroom-pic.jpeg",
+    image: img3,
   },
 ];
 
