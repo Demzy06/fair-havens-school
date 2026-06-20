@@ -1,11 +1,11 @@
 import Header from "./Header";
+import BuildingImg from "../assets/building-5.jpeg";
 function SectionTitle({ text }) {
   return (
     <div
       className="text-center "
       style={{
-        backgroundImage:
-          'linear-gradient(rgba(77, 166, 255, 0.4) 50%, rgba(77, 166, 255, 1) 85%),url("/src/assets/building-5.jpeg")',
+        backgroundImage: ` linear-gradient(rgba(77, 166, 255, 0.4) 50%, rgba(77, 166, 255, 1) 85%),url(${BuildingImg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
