@@ -5,6 +5,7 @@ import FlyerImg from "../assets/image.png";
 import img1 from "../assets/excitedKids.jpeg";
 import img2 from "../assets/comp-lab-pic.jpeg";
 import img3 from "../assets/classroom-pic.jpeg";
+import ClassroomImg from "../assets/building-3.jpg";
 const divsInfo = [
   {
     heading: "Schedule A Visit",
@@ -43,7 +44,15 @@ function ActionCardsSection() {
         </h3>
       </div>
 
-      <section className="pt-20 pb-20 pl-8 pr-8 touch text-white">
+      <section
+        className="pt-20 pb-20 pl-8 pr-8 text-white"
+        style={{
+          backgroundImage: `linear-gradient(rgb(15, 45, 82, 0.4)), url(${ClassroomImg})`,
+          backgroundSize: " cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div>
           <h2 className="mb-9">Building That Spark</h2>
           <p className="">
