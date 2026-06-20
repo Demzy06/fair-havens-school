@@ -1,8 +1,11 @@
+import { Link } from "react-router";
 import logo from "../assets/logo_.png";
 function Logo() {
   return (
     <>
-      <img src={logo} className="w-[2.7em] h-[2.7em]" />
+      <Link to="/">
+        <img src={logo} className="w-[2.7em] h-[2.7em]" />
+      </Link>
     </>
   );
 }
