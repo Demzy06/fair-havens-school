@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import SectionTitle from "../components/SectionTitle";
+import HighlightImg from "../assets/gallery/gallery-pic-56.jpeg";
 
 function SchoolAnthem() {
   return (
@@ -8,11 +9,7 @@ function SchoolAnthem() {
         <SectionTitle text="School Pledge And Anthems" />
 
         <div className="p-15 pl-6 pr-6">
-          <img
-            src="src/assets/gallery/gallery-pic-56.jpeg"
-            alt=""
-            className="mb-5"
-          />
+          <img src={HighlightImg} alt="" className="mb-5" />
           <h2 className="mb-5 text-[#67B3FF]">The School Pledge</h2>
           <p className="text-gray-800 leading-7">
             I pledge to Fair Havens Group of Schools <br />
