@@ -10,9 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify-react/boxicons": "^1.0.2",
+    "@iconify-react/fluent-mdl2": "^1.0.2",
+    "@iconify-react/iconoir": "^1.0.3",
+    "@iconify-react/material-symbols": "^1.0.21",
+    "@iconify-react/mdi": "^1.0.2",
+    "@iconify-react/quill": "^1.0.2",
     "@tailwindcss/vite": "^4.3.0",
+    "framer-motion": "^12.40.0",
+    "motion": "^12.40.0",
     "react": "^19.2.6",
+    "react-countup": "^6.5.0",
     "react-dom": "^19.2.6",
+    "react-intersection-observer": "^10.0.3",
     "react-router": "^7.16.0",
     "tailwindcss": "^4.3.0"
   },
