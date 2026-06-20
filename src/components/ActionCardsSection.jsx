@@ -5,8 +5,8 @@ import FlyerImg from "../assets/image.png";
 import img1 from "../assets/excitedKids.jpeg";
 import img2 from "../assets/comp-lab-pic.jpeg";
 import img3 from "../assets/classroom-pic.jpeg";
-import ClassroomImg from "../assets/classroom-pic.jpeg";
-// import ClassroomImg from "../assets/building-3.jpg";
+// import ClassroomImg from "../assets/classroom-pic.jpeg";
+import ClassroomImg from "../assets/building-3.jpg";
 const divsInfo = [
   {
     heading: "Schedule A Visit",
@@ -48,11 +48,10 @@ function ActionCardsSection() {
       <section
         className="pt-20 pb-20 pl-8 pr-8 text-white"
         style={{
-          backgroundImage: `linear-gradient(rgb(15, 45, 82, 0.4)), url(${ClassroomImg})`,
+          backgroundImage: `linear-gradient(rgba(15, 45, 82, 0.4)), url(${ClassroomImg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          // zIndex: "1000",
         }}
       >
         <div>
@@ -65,7 +64,11 @@ function ActionCardsSection() {
             soluta, architecto blanditiis rerum minus rem provident error. Harum
             veritatis ab sed adipisci?
           </p>
-          <Button />
+          <Button
+            text="Apply Today"
+            className="bg-white  p-2 pl-5 pr-5 text-black mt-6 uppercase text-[13px]"
+            link="/contact"
+          />
         </div>
       </section>
     </section>
