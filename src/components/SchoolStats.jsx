@@ -1,5 +1,6 @@
 import Button from "./Button";
 import Stats from "./Stats";
+import BuildingImg from "../assets/building-2.jpg";
 
 function SchoolStats() {
   return (
@@ -8,7 +9,7 @@ function SchoolStats() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('src/assets/building-2.jpg')",
+          backgroundImage: `url(${BuildingImg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           zIndex: "-1",
