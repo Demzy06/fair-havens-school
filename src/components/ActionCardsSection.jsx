@@ -54,7 +54,7 @@ function ActionCardsSection() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          zIndex: "1000",
+          // zIndex: "1000",
         }}
       >
         <div>
