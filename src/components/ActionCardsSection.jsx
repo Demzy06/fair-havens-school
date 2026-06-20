@@ -27,25 +27,23 @@ const divsInfo = [
 
 function ActionCardsSection() {
   return (
-    <>
-      <section className="actionCardSection pt-12 ">
-        <div className="text-center mb-6  pl-4 pr-4">
-          <h1 className="text-white mb-14 whiteColorShadow">
-            Créche, Nursery, Primary & Secondary
-          </h1>
-          <img src={FlyerImg} className="w-[80%] m-auto" />
-        </div>
-        <div className="pr-3 pl-3">
-          {divsInfo.map((info) => (
-            <ActionCard info={info} key={info.heading} />
-          ))}
-        </div>
-        <div className="pr-2 pl-2 pb-10">
-          <h3 className="text-center w-[95%] m-auto mt-10 mb-0 text-white">
-            A place where every child belongs, learns, and thrives
-          </h3>
-        </div>
-      </section>
+    <section className="actionCardSection pt-12 ">
+      <div className="text-center mb-6  pl-4 pr-4">
+        <h1 className="text-white mb-14 whiteColorShadow">
+          Créche, Nursery, Primary & Secondary
+        </h1>
+        <img src={FlyerImg} className="w-[80%] m-auto" />
+      </div>
+      <div className="pr-3 pl-3">
+        {divsInfo.map((info) => (
+          <ActionCard info={info} key={info.heading} />
+        ))}
+      </div>
+      <div className="pr-2 pl-2 ">
+        <h3 className="text-center w-[95%] m-auto mt-10 mb-12 text-white">
+          A place where every child belongs, learns, and thrives
+        </h3>
+      </div>
 
       <section
         className="pt-20 pb-20 pl-8 pr-8 text-white"
@@ -70,7 +68,7 @@ function ActionCardsSection() {
           <Button />
         </div>
       </section>
-    </>
+    </section>
   );
 }
 
