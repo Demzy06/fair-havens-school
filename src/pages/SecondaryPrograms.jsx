@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import SectionTitle from "../components/SectionTitle";
 
 const juniorSchoolContent = {
-  stage: "Jnior Secondary School",
+  stage: "Junior Secondary School",
   classType: "JSS1 To JSS3",
   firstParagraph:
     "We deliver a hybrid curriculum that blends both international and national frameworks, giving learners the flexibility to thrive in a dynamic learning environment. With a broad selection of 22 subjects across Science, Technology, Engineering, Arts, and Mathematics (STEAM), students are encouraged to explore their creativity, build essential 21st-century skills, express their ideas confidently, and develop holistically for lifelong success.",
