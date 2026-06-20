@@ -23,7 +23,9 @@ function Tuition() {
           title={tuitionDesc.title}
           description={tuitionDesc.description}
           items={tuitionDesc.items}
-          className="text-gray-200 bg-[linear-gradient(rgba(77,166,255,0.85),rgba(77,166,255,0.85)),url(/src/assets/logos-pic.jpg)] bg-contain bg-center bg-repeat"
+          paragraphColor="text-gray-800"
+          headingColor="text-gray-800"
+          // className="text-gray-200 bg-[linear-gradient(rgba(77,166,255,0.85),rgba(77,166,255,0.85)),url(/src/assets/logos-pic.jpg)] bg-contain bg-center bg-repeat"
         />
       </section>
       <Footer />
