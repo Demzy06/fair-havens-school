@@ -22,12 +22,9 @@ function ActionCardsSection() {
   return (
     <section className="actionCardSection pt-12 ">
       <div className="text-center mb-6  pl-4 pr-4">
-        <h1 className="text-white mb-14 zo">
+        <h1 className="text-white mb-14 whiteColorShadow">
           Créche, Nursery, Primary & Secondary
         </h1>
-        {/* <div className="flex justify-center w-[90%] h-[22rem] m-auto">
-          <img src="/src/assets/image.png" className="w-[80%]" />
-        </div> */}
         <img src="/src/assets/image.png" className="w-[80%] m-auto" />
       </div>
       <div className="pr-3 pl-3">
