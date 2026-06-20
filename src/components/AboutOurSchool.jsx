@@ -1,5 +1,5 @@
 import Button from "./Button";
-
+import logo from "../assets/logo.jpg";
 const schoolInfoCards = [
   {
     title: "Founders Note",
@@ -35,7 +35,7 @@ function AboutOurSchool() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url(/src/assets/logo.jpg)",
+          backgroundImage: `url(${logo})`,
           backgroundSize: "800px 800px",
           backgroundRepeat: "no-repeat",
           zIndex: "-1",
