@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ArrowBackIosRoundedIcon from "@iconify-react/material-symbols/arrow-back-ios-rounded";
+import ArrowIcon from "../assets/icons/image.png";
 
 function GallerySliderOverlay({
   onHandleOverlay,
@@ -33,10 +33,7 @@ function GallerySliderOverlay({
             className="absolute -left-4.5 top-1/2 -translate-y-1/2 text-white z-100 text-2xl p-2.5 rounded-full bg-white/30 border-[#b8b8b8] border-[0.5px]"
             onClick={() => decreaseImgNum()}
           >
-            <img
-              src="/src/assets/icons/image.png"
-              className="w-[1.8rem] h-[1.8rem]"
-            />
+            <img src={ArrowIcon} className="w-[1.8rem] h-[1.8rem]" />
             {/* <ArrowBackIosRoundedIcon height="1em" /> */}
           </button>
           <img
@@ -47,10 +44,7 @@ function GallerySliderOverlay({
             className="absolute justify-center -right-4.5 top-1/2 -translate-y-1/2 text-white z-100 text-2xl transform-[rotate(180deg)] p-2.5 rounded-full bg-white/20 border-[#b8b8b8] border-[0.5px]"
             onClick={() => increaseImgNum()}
           >
-            <img
-              src="/src/assets/icons/image.png"
-              className="w-[1.8rem] h-[1.8rem]"
-            />
+            <img src={ArrowIcon} className="w-[1.8rem] h-[1.8rem]" />
             {/* <ArrowBackIosRoundedIcon height="1em"  /> */}
           </button>
         </div>
