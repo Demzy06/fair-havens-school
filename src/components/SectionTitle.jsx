@@ -5,14 +5,14 @@ function SectionTitle({ text }) {
     <div
       className="text-center "
       style={{
-        backgroundImage: ` linear-gradient(rgba(77, 166, 255, 0.4) 50%, rgba(77, 166, 255, 1) 85%),url(${BuildingImg})`,
+        backgroundImage: ` linear-gradient(rgba(77, 166, 255, 0.4) 60%, rgba(77, 166, 255, 1) 75%),url(${BuildingImg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
       <Header />
-      <div className=" uppercase underline w-[94%] m-auto pt-18 pb-15 decoration-white h-56">
+      <div className=" uppercase underline w-[94%] m-auto pt-22 pb-22 decoration-white ">
         <h1 className="text-white">{text}</h1>
       </div>
     </div>
