@@ -4,6 +4,8 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import SchoolStats from "../components/SchoolStats";
+import CallToActionSection from "../components/CallToActionSection";
+
 function Homepage() {
   return (
     <>
@@ -11,6 +13,7 @@ function Homepage() {
       <HeroSection />
       <main>
         <ActionCardsSection />
+        <CallToActionSection />
         <AboutOurSchool />
         <SchoolStats />
         <Footer />
