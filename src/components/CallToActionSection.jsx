@@ -6,7 +6,7 @@ function CallToActionSection() {
     <section
       className="pt-20 pb-20 pl-8 pr-8 text-white"
       style={{
-        backgroundImage: `linear-gradient(rgba(15, 45, 82, 0.4)), url(${ClassroomImg})`,
+        backgroundImage: `linear-gradient( rgba(15, 45, 82, 0.4),rgba(15, 45, 82, 0.4)), url(${ClassroomImg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -24,7 +24,7 @@ function CallToActionSection() {
         </p>
         <Button
           text="Apply Today"
-          className="bg-white  p-2 pl-5 pr-5 text-black mt-6 uppercase text-[13px]"
+          className="bg-white p-2 pl-5 pr-5 text-black mt-6 uppercase text-[13px]"
           link="/contact"
         />
       </div>
