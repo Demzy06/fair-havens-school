@@ -11,13 +11,10 @@ function AdmissionProcessContent({ className, contentObj }) {
       <h1
         className={`mb-10 ${contentObj.type !== "blue" ? "text-gray-800" : ""} `}
       >
-        Fill And Submit Purchased Admission Form
+        {contentObj.step}
       </h1>
       <p className={`${contentObj.type !== "blue" ? "text-gray-800" : ""}`}>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
-        mollitia laudantium obcaecati culpa iusto placeat voluptates suscipit
-        eos totam alias odit corrupti distinctio, molestias aspernatur qui
-        error, vel vitae minus quis accusamus ipsa explicabo. Necessitatibus!
+        {contentObj.todo}
       </p>
     </div>
   );
