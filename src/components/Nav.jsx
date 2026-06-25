@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SubNavigationLinks from "./SubNavigationLinks";
-// import ArrowDown2BoldIcon from "@iconify-react/iconamoon/arrow-down-2-bold";
+import ArrowDown2BoldIcon from "@iconify-react/iconamoon/arrow-down-2-bold";
 
 function Nav({ navName, navSubLinks, subNavClassName }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ function Nav({ navName, navSubLinks, subNavClassName }) {
       <span className="flex justify-center mb-2">
         <span className="m-auto w-fit">{navName}</span>
         <button className="cursor-pointer" onClick={(e) => handleOpenSubNav(e)}>
-          {/* <ArrowDown2BoldIcon height="1.5em" /> */}x
+          <ArrowDown2BoldIcon height="1.5em" />
         </button>
       </span>
       {isOpen ? (
