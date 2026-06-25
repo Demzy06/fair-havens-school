@@ -23,7 +23,7 @@ const layoutClasses = [
 
   // // "h-[12em]",
 ];
-const galleryImages = Object.entries(images).map(([path, src], index) => ({
+const galleryImages = Object.entries(images).map(([src], index) => ({
   id: index + 1,
   src,
   alt: `Gallery image ${index + 1}`,

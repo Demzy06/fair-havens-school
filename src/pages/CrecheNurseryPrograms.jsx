@@ -1,4 +1,3 @@
-import { header } from "framer-motion/client";
 import AcademicsContent from "../components/AcademicsContent";
 import CrecheAcademicContent from "../components/CrecheAcademicContent";
 import SectionTitle from "../components/SectionTitle";

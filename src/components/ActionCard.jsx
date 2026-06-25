@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/immutability */
 import { Link } from "react-router";
 import { useInView } from "react-intersection-observer";
 
