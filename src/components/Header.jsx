@@ -30,10 +30,18 @@ function Header() {
         className={`${!navIsOpen ? `${isSticky && "fixed bg-white transition-all duration-300 ease-in-out"}` : "fixed"} absolute pr-0 pl-0 w-full left-0 z-100 `}
       >
         <div
-          className={`flex justify-between pr-2 pl-2 p-1 ${navIsOpen ? "bg-white" : ""}`}
+          className={`flex justify-between pr-2 pl-2 p-1 ${navIsOpen ? "bg-white" : ""} md:justify-between`}
         >
           {navIsOpen ? "" : <Logo />}
-          <button onClick={() => setNavISOpen(!navIsOpen)} className="ml-auto">
+
+          <div className="hidden md:flex  ">
+            <NavBar navIsOpen={navIsOpen} />
+          </div>
+
+          <button
+            onClick={() => setNavISOpen(!navIsOpen)}
+            className="ml-auto md:hidden "
+          >
             {navIsOpen ? (
               <CancelIcon height="2.5em" />
             ) : (
