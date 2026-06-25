@@ -20,7 +20,7 @@
 
 @layer components {
   .hey {
-    background-image: url("/src/assets/building-1.jpg");
+    background-image: url("/src/assets/building-1.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -96,5 +96,15 @@
   }
   .academic-content-bg {
     @apply bg-[#F7F9F6];
+  }
+
+  .animated-div {
+    transition:
+      transform 1s,
+      opacity 1s;
+  }
+  .div--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
   }
 }
