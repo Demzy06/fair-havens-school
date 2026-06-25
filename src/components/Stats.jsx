@@ -1,4 +1,5 @@
 import Counter from "./Counter";
+import { useInView } from "react-intersection-observer";
 
 const schoolStats = [
   {
@@ -16,12 +17,19 @@ const schoolStats = [
 ];
 
 function Stats() {
+  const { ref: divRef, inView: divInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.8,
+  });
   return (
-    <div className="text-center text-white ">
+    <div
+      ref={divRef}
+      className={`text-center text-white transition-all duration-700 ${divInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+    >
       {schoolStats.map((stat) => (
         <div className="mb-6">
           <h2 className="text-[50px] font-normal">
-            <Counter end={stat.stats} />
+            {divInView && <Counter end={stat.stats} />}
           </h2>
           <p>{stat.text}</p>
         </div>
