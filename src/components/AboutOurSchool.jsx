@@ -1,5 +1,6 @@
-import Button from "./Button";
 import logo from "../assets/logo.jpg";
+import AboutOurSchoolCards from "./AboutOurSchoolCards";
+
 const schoolInfoCards = [
   {
     title: "Founders Note",
@@ -42,15 +43,7 @@ function AboutOurSchool() {
         }}
       />
       {schoolInfoCards.map((card, i) => (
-        <div className="mb-9 p-6 bg-blue-opacity" key={i}>
-          <h3 className="mb-8 text-white">{card.title}</h3>
-          <p className="mb-12 leading-6  text-white">{card.text}</p>
-          <Button
-            text="Learn More"
-            link={card.path}
-            className="bg-transparent text-white border-2 border-white p-2 pl-5 pr-5 text-[14px]"
-          />
-        </div>
+        <AboutOurSchoolCards card={card} i={i} />
       ))}
     </section>
   );
