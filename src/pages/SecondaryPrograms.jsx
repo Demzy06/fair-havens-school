@@ -31,11 +31,16 @@ const seniorSchoolContent = {
   stage: "Senior Secondary School",
   classType: "SS1 To SS3",
   firstParagraph:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quibusdam id alias commodi placeat quo voluptates consequuntur optio? Eius, atque sapiente? Voluptatum totam quo quasi illo quidem in cupiditate maxime.",
+    "At the Senior Secondary level, students are offered a broad and balanced curriculum designed to prepare them for higher education, professional careers, and lifelong learning. Students select subjects according to their interests, strengths, and future career aspirations, while also meeting the requirements of national and international examinations.",
   secondParagraph:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quibusdam id alias commodi placeat quo voluptates consequuntur optio? Eius, atque sapiente? Voluptatum totam quo quasi illo quidem in cupiditate maxime.",
+    "All students are required to study the core subjects of English Language, Mathematics, Civic Education, and one Trade/Entrepreneurship subject. In addition, they choose subjects from their preferred area of specialization, which includes:",
+  listArr: [
+    "Science and Mathematics",
+    "Humanities and Arts",
+    "Business/Commercial Studies",
+  ],
   thirdParagraph:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quibusdam id alias commodi placeat quo voluptates consequuntur optio? Eius, atque sapiente? Voluptatum totam quo quasi illo quidem in cupiditate maxime.",
+    "The curriculum integrates the requirements of WAEC, NECO, and IGCSE, ensuring that students receive a comprehensive education that fosters critical thinking, creativity, problem-solving abilities, and readiness for tertiary education and the global workplace.",
 };
 
 const seniorSubjectTaught = [
@@ -79,6 +84,7 @@ function SecondaryPrograms() {
           firstParagraph={seniorSchoolContent.firstParagraph}
           secondParagraph={seniorSchoolContent.secondParagraph}
           thirdParagraph={seniorSchoolContent.thirdParagraph}
+          list={seniorSchoolContent.listArr}
         />
         <AcademicsSubjectTaught subjectArr={seniorSubjectTaught} />
       </div>
