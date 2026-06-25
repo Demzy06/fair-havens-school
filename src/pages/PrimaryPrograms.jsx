@@ -7,9 +7,9 @@ const lowerPrimarySchoolContent = {
   stage: "Lower Primary School",
   classType: "Year 1 To 3",
   firstParagraph:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, repudiandae blanditiis nemo autem laboriosam laborum distinctio, error molestias illum porro magnam. Mollitia sunt perferendis illo. Sed tempore corporis nisi velit maiores ducimus minus quaerat atque. Architecto facilis fugiat quas illo. Accusantium dignissimos, quo tempora illum ducimus sunt quibusdam sit eum!",
+    "At Fair Havens Schools, our Lower Primary School is dedicated to building strong foundations for lifelong learning. We provide an engaging and supportive environment where pupils are encouraged to explore, discover, and excel. Through an integrated curriculum and diverse learning experiences, we nurture confident and respectful learners who are equipped with the knowledge, skills, and values necessary to succeed academically and make meaningful contributions to society.",
   secondParagraph:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, repudiandae blanditiis nemo autem laboriosam laborum distinctio, error molestias illum porro magnam. Mollitia sunt perferendis illo. Sed tempore corporis nisi velit maiores ducimus minus quaerat atque.",
+    "Science and Technology are integral to our Lower Primary curriculum, inspiring curiosity, creativity, and hands on learning. Through our STEAMS approach, which integrates Science, Technology, Engineering, Arts, Mathematics, and Sports, we equip pupils with essential skills while encouraging innovation, problem solving, and a love for discovery.",
 };
 
 const lowerPrimarySubjectTaught = [
@@ -29,9 +29,9 @@ const upperPrimarySchoolContent = {
   stage: "Upper Primary School",
   classType: "Year 4 To 6",
   firstParagraph:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, repudiandae blanditiis nemo autem laboriosam laborum distinctio, error molestias illum porro magnam. Mollitia sunt perferendis illo. Sed tempore corporis nisi velit maiores ducimus minus quaerat atque. Architecto facilis fugiat quas illo. Accusantium dignissimos, quo tempora illum ducimus sunt quibusdam sit eum!",
+    "In our Upper Primary School (Years 4, 5, and 6), we provide an integrated curriculum that combines the best of the Nigerian and British educational systems. We focus on the holistic development of every child, equipping pupils with essential 21st century skills while nurturing effective communication, self discipline, and respect. Through a wide range of academic and co curricular opportunities, we encourage teamwork, creativity, leadership, and personal growth.",
   secondParagraph:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, repudiandae blanditiis nemo autem laboriosam laborum distinctio, error molestias illum porro magnam. Mollitia sunt perferendis illo. Sed tempore corporis nisi velit maiores ducimus minus quaerat atque.",
+    "Science, Technology, Engineering, Arts, Mathematics, and Sports (STEAMS) play a vital role in our Upper Primary curriculum, fostering critical thinking, creativity, and innovation. Through practical activities and hands on learning experiences, we provide engaging opportunities that inspire pupils to explore, discover, and apply their knowledge with confidence.",
 };
 
 const upperPrimarySubjectTaught = [
