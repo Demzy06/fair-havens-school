@@ -8,9 +8,9 @@ const crecheContent = {
   header: "Nurturing Beginnings",
   subHeader: "Nurturing Little Hearts and Curious Minds",
   firstParagraph:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nobis, facere illo voluptatum dolorum voluptates, mollitia quod saepe illum fugiat nostrum consequatur quaerat at impedit corporis unde consequuntur aliquid possimus",
+    "Our Foundation Stage is specially designed to meet the unique needs of our youngest learners. By combining the strengths of the British, Montessori, and Nigerian curricula, we create engaging learning experiences that inspire curiosity, creativity, and confidence. We offer five carefully structured classes that guide children through their early years and prepare them for future academic success",
   secondParagraph:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nobis, facere illo voluptatum dolorum voluptates, mollitia quod saepe illum fugiat nostrum consequatur quaerat at impedit corporis unde consequuntur aliquid possimus.",
+    "Our Nursery curriculum is carefully structured to develop essential early learning skills through a wide range of subjects, including Literacy, Numeracy, Knowledge and Understanding of the World, Creative Development, and Physical Development. Every classroom is equipped with interactive learning corners that provide opportunities for exploration, creativity, and collaboration through activities such as reading, role-play, construction, artistic expression, and nature discovery.",
   list: [
     "Crèche",
     "Pre-School One",
@@ -24,9 +24,9 @@ const individualLearning = {
   header: "Tailored Learning",
   subHeader: "Early Learning Programme",
   firstParagraph:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit voluptatem dolores magnam pariatur molestias voluptates expedita, tempore, minima esse eligendi dolorem repellat doloribus doloremque, eveniet nostrum laudantium iusto architecto!",
+    "At Fair Havens Schools, we believe that no two children learn in exactly the same way. Our one-on-one teaching approach allows our professional Early Years educators to identify and nurture each child's individual learning needs, helping them reach and surpass class expectations. Additionally, our Early Academic Intervention Programme provides targeted support for pupils facing academic challenges, ensuring that no child is left behind.",
   secondParagraph:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit voluptatem dolores magnam pariatur molestias voluptates expedita, tempore, minima esse eligendi dolorem repellat doloribus doloremque, eveniet nostrum laudantium iusto architecto!",
+    "Our Foundation Stage is led by a team of dedicated and experienced Early Years professionals who bring expertise, care, and creativity to every classroom. Through the effective application of the Montessori philosophy and the use of modern educational resources, we create an environment where children thrive academically and socially. We proudly nurture early readers from the age of three and are committed to raising confident, curious, and exceptional young learners.",
 };
 function CrecheNurseryPrograms() {
   return (
