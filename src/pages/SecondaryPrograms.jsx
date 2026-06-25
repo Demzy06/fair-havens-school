@@ -1,3 +1,5 @@
+import useToTop from "../hooks/useToTop";
+
 import AcademicsContent from "../components/AcademicsContent";
 import AcademicsSubjectTaught from "../components/AcademicsSubjectTaught";
 import Footer from "../components/Footer";
@@ -62,6 +64,8 @@ const seniorSubjectTaught = [
   { subjectName: "Accounting", bgColor: "#444444" },
 ];
 function SecondaryPrograms() {
+  useToTop();
+
   return (
     <>
       <div>
