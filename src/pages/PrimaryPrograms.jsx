@@ -1,3 +1,5 @@
+import useToTop from "../hooks/useToTop";
+
 import AcademicsContent from "../components/AcademicsContent";
 import AcademicsSubjectTaught from "../components/AcademicsSubjectTaught";
 import AdmissionProcessContent from "../components/AdmissionProcessContent";
@@ -50,6 +52,7 @@ const upperPrimarySubjectTaught = [
 ];
 
 function PrimaryPrograms() {
+  useToTop();
   return (
     <>
       <div>

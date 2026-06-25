@@ -1,3 +1,5 @@
+import useToTop from "../hooks/useToTop";
+
 import ContentSection from "../components/ContentSection";
 import SectionTitle from "../components/SectionTitle";
 import Footer from "../components/Footer";
@@ -14,6 +16,7 @@ const tuitionDesc = {
   ],
 };
 function Tuition() {
+  useToTop();
   return (
     <>
       <section>

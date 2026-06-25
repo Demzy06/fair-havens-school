@@ -1,3 +1,4 @@
+import useToTop from "../hooks/useToTop";
 import AboutOurSchool from "../components/AboutOurSchool";
 import ActionCardsSection from "../components/ActionCardsSection";
 import Footer from "../components/Footer";
@@ -6,6 +7,7 @@ import SchoolStats from "../components/SchoolStats";
 import CallToActionSection from "../components/CallToActionSection";
 
 function Homepage() {
+  useToTop();
   return (
     <>
       {/* <Header /> */}

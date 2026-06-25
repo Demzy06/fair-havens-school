@@ -1,8 +1,12 @@
+import useToTop from "../hooks/useToTop";
+
 import Footer from "../components/Footer";
 import SectionTitle from "../components/SectionTitle";
 import HighlightImg from "../assets/gallery/gallery-pic-56.jpeg";
 
 function SchoolAnthem() {
+  useToTop();
+
   return (
     <>
       <div>

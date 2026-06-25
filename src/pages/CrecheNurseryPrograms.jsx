@@ -1,3 +1,5 @@
+import useToTop from "../hooks/useToTop";
+
 import AcademicsContent from "../components/AcademicsContent";
 import CrecheAcademicContent from "../components/CrecheAcademicContent";
 import SectionTitle from "../components/SectionTitle";
@@ -28,6 +30,7 @@ const individualLearning = {
     "Our Foundation Stage is led by a team of dedicated and experienced Early Years professionals who bring expertise, care, and creativity to every classroom. Through the effective application of the Montessori philosophy and the use of modern educational resources, we create an environment where children thrive academically and socially. We proudly nurture early readers from the age of three and are committed to raising confident, curious, and exceptional young learners.",
 };
 function CrecheNurseryPrograms() {
+  useToTop();
   return (
     <>
       <div>

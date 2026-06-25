@@ -1,7 +1,9 @@
+import { useState } from "react";
+import useToTop from "../hooks/useToTop";
+
 import SectionTitle from "../components/SectionTitle";
 import Footer from "../components/Footer";
 import GallerySliderOverlay from "../components/GallerySliderOverlay";
-import { useState } from "react";
 
 const images = import.meta.glob("../assets/gallery/*.{jpg,png,jpeg}", {
   eager: true,
@@ -15,13 +17,6 @@ const layoutClasses = [
   "",
   "col-span-2",
   "",
-  // "h-[12rem]",
-
-  // "h-[12.5rem]",
-
-  // "h-[13rem]",
-
-  // // "h-[12em]",
 ];
 const galleryImages = Object.entries(images).map(([src], index) => ({
   id: index + 1,
@@ -30,8 +25,8 @@ const galleryImages = Object.entries(images).map(([src], index) => ({
   className: layoutClasses[index % layoutClasses.length],
 }));
 
-console.log(galleryImages);
 function Gallery() {
+  useToTop();
   const [clickedImage, setClikedImage] = useState();
   const [overlayIsOpen, setOverlayIsOpen] = useState(false);
 
