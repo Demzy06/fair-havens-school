@@ -18,7 +18,7 @@ const layoutClasses = [
   "col-span-2",
   "",
 ];
-const galleryImages = Object.entries(images).map(([src], index) => ({
+const galleryImages = Object.entries(images).map(([path, src], index) => ({
   id: index + 1,
   src,
   alt: `Gallery image ${index + 1}`,
