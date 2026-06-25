@@ -1,3 +1,5 @@
+import useToTop from "../hooks/useToTop";
+
 import AdmissionProcessContent from "../components/AdmissionProcessContent";
 import Footer from "../components/Footer";
 import SectionTitle from "../components/SectionTitle";
@@ -8,39 +10,29 @@ const admissionSteps = [
   "Parent and applicant interview",
 ];
 
-const step1 = [
-  {
-    stepNumber: 1,
-    step: "Fill and Submit Purchased ",
-    forewarn: "Please read the information below carefully",
-    todo: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum mollitia laudantium obcaecati culpa iusto placeat voluptates suscipit eos totam alias odit corrupti distinctio, molestias aspernatur qui error, vel vitae minus quis accusamus ipsa explicabo. Necessitatibus!",
-  },
-];
-
-console.log(step1[0].stepNumber);
-
 const steps = [
   {
     stepNumber: 1,
     step: "Fill and Submit Purchased ",
     forewarn: "Please read the information below carefully",
-    todo: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum mollitia laudantium obcaecati culpa iusto placeat voluptates suscipit eos totam alias odit corrupti distinctio, molestias aspernatur qui error, vel vitae minus quis accusamus ipsa explicabo. Necessitatibus!",
+    todo: " To begin the admission process, a payment of {xoxoxo} is required for the purchase of the Admission Form. Parents or guardians are kindly requested to complete the form carefully, ensuring that all information provided is accurate and up to date to enable us to maintain proper records for each applicant.",
   },
   {
     stepNumber: 2,
     step: "Admissions Exam",
     forewarn: "Please read the information below carefully",
-    todo: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum mollitia laudantium obcaecati culpa iusto placeat voluptates suscipit eos totam alias odit corrupti distinctio, molestias aspernatur qui error, vel vitae minus quis accusamus ipsa explicabo. Necessitatibus!",
+    todo: "All applicants, accompanied by their parents or guardians, will be invited to participate in a comprehensive entrance assessment. This engaging evaluation enables us to gain a holistic understanding of each child's abilities, strengths, and potential.",
     type: "blue",
   },
   {
     stepNumber: 3,
     step: "Student & Parent Engagement Session",
     forewarn: "Please read the information below carefully",
-    todo: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum mollitia laudantium obcaecati culpa iusto placeat voluptates suscipit eos totam alias odit corrupti distinctio, molestias aspernatur qui error, vel vitae minus quis accusamus ipsa explicabo. Necessitatibus!",
+    todo: "Following the successful completion of the entrance assessment, applicants and their parents or guardians will be invited for an interview. This interactive session provides an opportunity for us to learn more about the applicant, understand their educational aspirations, and ensure that our learning environment is the right fit for the family. We are committed to maintaining a transparent, fair, and thorough admissions process.",
   },
 ];
 function AdmissionProcess() {
+  useToTop();
   return (
     <>
       <section>
@@ -57,8 +49,8 @@ function AdmissionProcess() {
               We welcome prospective students into a nurturing and academically
               enriching environment. Our admission process is simple,
               transparent, and designed to ensure a smooth transition for every
-              child and their family. "Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Repudiandae, tempore".
+              child and their family. If you have any questions you can call us
+              at <span className="text-black">08023182828.</span>
             </p>
 
             <div className="mt-18 pl-2 pr-2">
