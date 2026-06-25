@@ -45,7 +45,10 @@ function Header() {
             {navIsOpen ? (
               <CancelIcon height="2.5em" />
             ) : (
-              <HamburgerIcon height="2.3em" />
+              <HamburgerIcon
+                height="2.3em"
+                style={isSticky ? { color: "black" } : { color: "#fff" }}
+              />
             )}
           </button>
         </div>
