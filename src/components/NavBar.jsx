@@ -4,16 +4,16 @@ import Nav from "./Nav";
 const subNavLinkName = [
   "About Us",
   // "Schools",
-  // "Academic",
+  "Academic",
   "Admissions",
   "Students",
 ];
 
 const allNavSubLinkArr = [
   ["History", "Founders Note", "School Pledge And Anthem"],
-  ["Nursery And Primary", "Secondary And Highschool"],
+  // ["Nursery And Primary", "Secondary And Highschool"],
   ["Secondary Programs", "Primary Programs", "Creche And Nursery Programs"],
-  ["Tuition", "Admission Process", "Admission Exams And Result"],
+  ["Tuition", "Admission Process"],
   ["Co-curricular Activities And Clubs"],
 ];
 
@@ -26,12 +26,12 @@ function NavBar({ navIsOpen }) {
         {subNavLinkName.map((name, i) => (
           <Nav navName={name.toUpperCase()} navSubLinks={allNavSubLinkArr[i]} />
         ))}
-        <li className="mb-4 -ml-4.5">
+        <li className="mb-4 w-[99%]">
           <Link to="/gallery" className="uppercase ">
             Gallery
           </Link>
         </li>
-        <li className="-ml-4.5">
+        <li className=" w-[98.5%]">
           <Link to="/contact" className="uppercase">
             Contact
           </Link>
