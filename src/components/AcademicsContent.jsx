@@ -5,6 +5,7 @@ function AcademicsContent({
   secondParagraph,
   thirdParagraph,
   background,
+  list,
 }) {
   return (
     <div className={`pt-15 pb-10 pl-5 pr-5  text-[#0F172A] ${background}`}>
@@ -16,7 +17,14 @@ function AcademicsContent({
       <h2 className="mb-7">{classType}</h2>
       <p className="mb-5">{firstParagraph}</p>
       <p>{secondParagraph}</p>
-      {thirdParagraph && <p>{thirdParagraph}</p>}
+      {list && (
+        <ul className="list-disc mt-3 ml-8">
+          {list.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      )}
+      {thirdParagraph && <p className="mt-5">{thirdParagraph}</p>}
     </div>
   );
 }
