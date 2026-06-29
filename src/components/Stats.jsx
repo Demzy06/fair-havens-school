@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 
 const schoolStats = [
   {
-    stats: 48,
+    stats: 24,
     text: "Years Of Excellence",
   },
   {
@@ -15,7 +15,7 @@ const schoolStats = [
     text: "Accreditations",
   },
   {
-    stats: 15000,
+    stats: 2500,
     text: "Alunmi",
   },
 ];
