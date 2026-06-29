@@ -47,7 +47,7 @@ export default function Footer() {
 
             <span className=" flex h-8 items-center">
               <CallIcon height="1.5em" />
-              <p className="ml-1"> +234 814 309 4131</p>
+              <p className="ml-1"> +234 802 318 2828</p>
             </span>
 
             <span className=" flex h-8 items-center">
@@ -64,7 +64,7 @@ export default function Footer() {
           <ul className=" text-sm list-disc pl-4">
             {quickLink.map((list) => (
               <Link
-                to={list.path}
+                to={`/${list.path}`}
                 className="hover:text-[#60A5FA] cursor-pointer"
               >
                 <li>{list.title}</li>
@@ -80,7 +80,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm list-disc pl-4">
             {academicLinks.map((list) => (
               <Link
-                to={list.path}
+                to={`/${list.path}`}
                 className="hover:text-[#60A5FA] cursor-pointer"
               >
                 <li>{list.title}</li>
