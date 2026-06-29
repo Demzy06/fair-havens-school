@@ -10,7 +10,12 @@ const subNavLinkName = [
 ];
 
 const allNavSubLinkArr = [
-  ["History", "Founders Note", "School Pledge And Anthem"],
+  [
+    "History",
+    "Founders Note",
+    "School Pledge And Anthem",
+    "Fair Havens At A Glance",
+  ],
   // ["Nursery And Primary", "Secondary And Highschool"],
   ["Secondary Programs", "Primary Programs", "Creche And Nursery Programs"],
   ["Tuition", "Admission Process"],
@@ -31,8 +36,8 @@ function NavBar({ navIsOpen }) {
             Gallery
           </Link>
         </li>
-        <li className=" w-[92.7%]">
-          <Link to="/contact" className="uppercase">
+        <li className=" w-[92.6%]">
+          <Link to="/contact-us" className="uppercase">
             Contact
           </Link>
         </li>
