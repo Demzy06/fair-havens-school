@@ -38,24 +38,28 @@ function AdmissionProcess() {
       <section>
         <SectionTitle text="Admission Process" />
 
-        <div className="pt-20 pb-20 text-gray-200 bg-[linear-gradient(rgba(77,166,255,0.85),rgba(77,166,255,0.85)),url(/src/assets/logos-pic.jpg)] bg-contain bg-center bg-repeat">
+        <div className="pt-20 pb-20 text-gray-200 bg-[linear-gradient(rgba(77,166,255,0.85),rgba(77,166,255,0.85)),url(/src/assets/logos-pic.jpg)] bg-contain bg-center bg-repeat md:pl-60 md:pr-60">
           <h1 className="w-[80%] text-center m-auto mb-20">
             Opening Our Doors to Bright Young Minds
           </h1>
 
           <div className="pl-4 pr-4">
-            <h1 className="mb-7">Fair Havens School Registration</h1>
-            <p>
-              We welcome prospective students into a nurturing and academically
-              enriching environment. Our admission process is simple,
-              transparent, and designed to ensure a smooth transition for every
-              child and their family. If you have any questions you can call us
-              at <span className="text-black">08023182828.</span>
-            </p>
+            <div className="md:flex ">
+              <h1 className="mb-7 md:flex-1 md:text-[48px]">
+                Fair Havens School Registration
+              </h1>
+              <p className="md:flex-1">
+                We welcome prospective students into a nurturing and
+                academically enriching environment. Our admission process is
+                simple, transparent, and designed to ensure a smooth transition
+                for every child and their family. If you have any questions you
+                can call us at <span className="text-black">08023182828.</span>
+              </p>
+            </div>
 
-            <div className="mt-18 pl-2 pr-2">
+            <div className="mt-18 pl-2 pr-2 md:flex md:gap-4">
               {admissionSteps.map((step, i) => (
-                <div className="pt-30 pb-18 pl-7 pr-7 text-center bg-white mb-5">
+                <div className="pt-30 pb-18 pl-7 pr-7 text-center bg-white mb-5 md:h-90 md:w-90 md:pl-3 md:pr-3">
                   <h1 className="mb-5 text-gray-800 text-5xl">{i + 1}</h1>
                   <p className="text-gray-800 text-xl">{`Step ${i + 1}: ${step}`}</p>
                 </div>
@@ -64,9 +68,11 @@ function AdmissionProcess() {
           </div>
         </div>
 
-        {steps.map((step) => (
-          <AdmissionProcessContent contentObj={step} />
-        ))}
+        <div>
+          {steps.map((step) => (
+            <AdmissionProcessContent contentObj={step} />
+          ))}
+        </div>
       </section>
       <Footer />
     </>

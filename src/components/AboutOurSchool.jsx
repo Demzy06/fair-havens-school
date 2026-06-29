@@ -8,11 +8,11 @@ const schoolInfoCards = [
     path: "founders-note",
     text: "A personal message from our founder, sharing the vision, values, and commitment to providing quality education for every child.",
   },
-  {
-    title: "Principal Note",
-    path: "principal-note",
-    text: "A note from the Managing Director highlighting our goals and dedication to maintaining high standards in teaching, discipline, and student development.",
-  },
+  // {
+  //   title: "Principal Note",
+  //   path: "principal-note",
+  //   text: "A note from the Managing Director highlighting our goals and dedication to maintaining high standards in teaching, discipline, and student development.",
+  // },
   {
     title: "About Us",
     path: "fair-havens-at-a-glance",
@@ -35,7 +35,7 @@ function AboutOurSchool() {
     <section className="p-8 pl-6 pr-6 bg-smooth inset-0 bg-linear-to-br from-[#4DA6FF]/50 to-white/50 relative">
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center "
         style={{
           backgroundImage: `url(${logo})`,
           backgroundSize: "800px 800px",
@@ -43,9 +43,11 @@ function AboutOurSchool() {
           zIndex: "-1",
         }}
       />
-      {schoolInfoCards.map((card, i) => (
-        <AboutOurSchoolCards card={card} i={i} />
-      ))}
+      <div className="md:grid grid-cols-2 gap-4 md:w-[70%] md:mt-5 md:m-auto">
+        {schoolInfoCards.map((card, i) => (
+          <AboutOurSchoolCards card={card} i={i} />
+        ))}
+      </div>
     </section>
   );
 }

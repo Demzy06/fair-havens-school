@@ -52,6 +52,7 @@ const upperPrimarySubjectTaught = [
 ];
 
 function PrimaryPrograms() {
+  console.log(upperPrimarySubjectTaught);
   useToTop();
   return (
     <>
@@ -59,24 +60,37 @@ function PrimaryPrograms() {
         <SectionTitle text="Primary School Programme" />
 
         {/* Lower Primary school */}
-        <AcademicsContent
-          stage={lowerPrimarySchoolContent.stage}
-          classType={lowerPrimarySchoolContent.classType}
-          firstParagraph={lowerPrimarySchoolContent.firstParagraph}
-          secondParagraph={lowerPrimarySchoolContent.secondParagraph}
-          background="academic-content-bg"
-        />
-        <AcademicsSubjectTaught subjectArr={lowerPrimarySubjectTaught} />
+        <div className="md:flex md:bg-[#F7F9F6] ">
+          <div className="flex-7">
+            <AcademicsContent
+              stage={lowerPrimarySchoolContent.stage}
+              classType={lowerPrimarySchoolContent.classType}
+              firstParagraph={lowerPrimarySchoolContent.firstParagraph}
+              secondParagraph={lowerPrimarySchoolContent.secondParagraph}
+              background="academic-content-bg"
+              lowerPrimarySubjectTaught={lowerPrimarySubjectTaught}
+            />
+          </div>
+          <div className="flex-3 md:m-auto md:pr-30 md:pl-5 ">
+            <AcademicsSubjectTaught subjectArr={lowerPrimarySubjectTaught} />
+          </div>
+        </div>
 
         {/* Upper primary school */}
-        <AcademicsContent
-          stage={upperPrimarySchoolContent.stage}
-          classType={upperPrimarySchoolContent.classType}
-          firstParagraph={upperPrimarySchoolContent.firstParagraph}
-          secondParagraph={upperPrimarySchoolContent.secondParagraph}
-          background="bgBlueLogo"
-        />
-        <AcademicsSubjectTaught subjectArr={upperPrimarySubjectTaught} />
+        <div className="md:flex bgBlueLogo ">
+          <div className="flex-7">
+            <AcademicsContent
+              stage={upperPrimarySchoolContent.stage}
+              classType={upperPrimarySchoolContent.classType}
+              firstParagraph={upperPrimarySchoolContent.firstParagraph}
+              secondParagraph={upperPrimarySchoolContent.secondParagraph}
+              background="bgBlueLogo"
+            />
+          </div>
+          <div className="flex-3 md:m-auto md:pr-30 md:pl-5 rounded-20">
+            <AcademicsSubjectTaught subjectArr={upperPrimarySubjectTaught} />
+          </div>
+        </div>
       </div>
       <Footer />
     </>

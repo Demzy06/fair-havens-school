@@ -11,12 +11,18 @@ const images = import.meta.glob("../assets/gallery/*.{jpg,png,jpeg}", {
 });
 
 const layoutClasses = [
-  "col-span-1 row-span-2",
-  "",
-  "row-span-2",
-  "",
-  "col-span-2",
-  "",
+  "col-span-1 row-span-2 md:col-span-0 md:row-span-0",
+  // "",
+  "row-span-2 md:row-span-0",
+  // "",
+  "col-span-2 md:col-span-0",
+  // "",
+  // "col-span-1 row-span-2 md:col-span-0 md:row-span-0",
+  // // "",
+  // "row-span-2 md:row-span-0",
+  // // "",
+  // "col-span-2 md:col-span-0",
+  // // "",
 ];
 const galleryImages = Object.entries(images).map(([path, src], index) => ({
   id: index + 1,
@@ -54,14 +60,14 @@ function Gallery() {
           />
         )}
         <div className="p-10 pr-5 pl-5 ">
-          <h2 className="mb-5 uppercase text-gray-800 ">
+          <h2 className="mb-5 uppercase text-gray-800 md:pl-20 md:mb-10 md:mt-5 md:text-[48px]">
             Fair Havens School at a glance
           </h2>
-          <div className="grid grid-cols-2  gap-2">
+          <div className="grid grid-cols-2 md:grid-cols-4  gap-2 md:gap-2 md:pl-20 md:pr-20">
             {galleryImages.map((image) => (
               <div
                 key={image.id}
-                className={`overflow-hidden rounded-xl ${image.className}`}
+                className={`overflow-hidden rounded-xl cursor-pointer ${image.className} `}
                 onClick={() => viewPicture(image.id)}
               >
                 <img

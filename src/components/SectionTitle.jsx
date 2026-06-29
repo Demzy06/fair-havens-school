@@ -1,5 +1,5 @@
 import Header from "./Header";
-import BuildingImg from "../assets/building-5.jpeg";
+import BuildingImg from "../assets/building-2.jpg";
 function SectionTitle({ text }) {
   return (
     <div
@@ -12,8 +12,9 @@ function SectionTitle({ text }) {
       }}
     >
       <Header />
-      <div className=" uppercase underline w-[94%] m-auto pt-22 pb-22 decoration-white ">
-        <h1 className="text-white">{text}</h1>
+      <div className=" uppercase underline w-[94%] m-auto pt-22 pb-22 decoration-white md:pt-63 md:pb-63">
+        {/* <div className=" uppercase underline w-[94%] m-auto  decoration-white md:h-[37rem]"> */}
+        <h1 className="text-white md:text-[80px]">{text}</h1>
       </div>
     </div>
   );

@@ -56,25 +56,27 @@ function ActionCardsSection() {
         >
           Créche, Nursery, Primary & Secondary
         </h1>
-        <img
-          src={FlyerImg}
-          className={`w-[80%] m-auto transition-all duration-700 ${
-            imgIsInVew
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-10"
-          }`}
-          ref={imgRef}
-        />
+        <div className="w-full">
+          <img
+            src={FlyerImg}
+            className={` md:w-[46%] md:h-[50rem] w-[80%] m-auto transition-all duration-700 ${
+              imgIsInVew
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }`}
+            ref={imgRef}
+          />
+        </div>
       </div>
-      <div className="pr-3 pl-3">
+      <div className="pr-3 pl-3 md:flex md:justify-between md:w-fit md:m-auto gap-2 md:mt-30">
         {divsInfo.map((info) => (
           <ActionCard info={info} key={info.heading} />
         ))}
       </div>
-      <div className={`"pr-2 pl-2 pb-12 `}>
+      <div className={`"pr-2 pl-2 pb-12 md:pb-40`}>
         <h3
           ref={divRef}
-          className={`text-center w-[95%] m-auto mt-10 mb-0 text-white transition-all duration-700 ${
+          className={`text-center w-[95%] m-auto mt-10 mb-0 text-white transition-all duration-700 md:text-[20px] ${
             divIsInVew
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-10"

@@ -1,10 +1,11 @@
 function AcademicsSubjectTaught({ subjectArr }) {
+  console.log(subjectArr);
   return (
     <div className="pl-5 pr-5 p-8 bg-[#F7F9F6]">
-      <h4 className="font-medium p-3 pr-1 pl-5 bg-[#EAF5E4] -z-10 rounded-t-xl uppercase border-b border-[#dbe6d5] text-[#0F172A]">
+      <h4 className="font-medium p-3 pr-1 pl-5 bg-[#EAF5E4] -z-10 rounded-t-xl uppercase border-b border-[#dbe6d5] text-[#0F172A] md:pt-4 md:pb-4">
         Subjects Taught
       </h4>
-      <ul className=" pb-10 pl-5 pt-3 flex flex-wrap bg-[#FFFFFF] rounded-b-xl">
+      <ul className=" pb-10 pl-5 pt-3 flex flex-wrap bg-[#FFFFFF] rounded-b-xl md:pt-5 md:pb-5">
         {subjectArr.map((subject) => (
           <li
             key={subject.subjectName}
@@ -20,3 +21,5 @@ function AcademicsSubjectTaught({ subjectArr }) {
 }
 
 export default AcademicsSubjectTaught;
+
+// md:pt-25 md:pb-25 md:pl-20

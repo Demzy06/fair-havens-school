@@ -71,26 +71,40 @@ function SecondaryPrograms() {
       <div>
         <SectionTitle text="Secondary School Programme " />
         {/* Junior school content */}
-        <AcademicsContent
-          stage={juniorSchoolContent.stage}
-          classType={juniorSchoolContent.classType}
-          firstParagraph={juniorSchoolContent.firstParagraph}
-          secondParagraph={juniorSchoolContent.secondParagraph}
-          background="academic-content-bg"
-        />
-        <AcademicsSubjectTaught subjectArr={juniorSubjectTaught} />
+        <div className="md:flex md:bg-[#F7F9F6] ">
+          <div className="flex-7">
+            <AcademicsContent
+              stage={juniorSchoolContent.stage}
+              classType={juniorSchoolContent.classType}
+              firstParagraph={juniorSchoolContent.firstParagraph}
+              secondParagraph={juniorSchoolContent.secondParagraph}
+              background="academic-content-bg"
+            />
+          </div>
+
+          <div className="flex-3 md:m-auto md:pr-30 md:pl-5">
+            <AcademicsSubjectTaught subjectArr={juniorSubjectTaught} />
+          </div>
+        </div>
 
         {/* Senior Secondary content */}
-        <AcademicsContent
-          background="bgBlueLogo"
-          stage={seniorSchoolContent.stage}
-          classType={seniorSchoolContent.classType}
-          firstParagraph={seniorSchoolContent.firstParagraph}
-          secondParagraph={seniorSchoolContent.secondParagraph}
-          thirdParagraph={seniorSchoolContent.thirdParagraph}
-          list={seniorSchoolContent.listArr}
-        />
-        <AcademicsSubjectTaught subjectArr={seniorSubjectTaught} />
+        <div className="md:flex bgBlueLogo ">
+          <div className="flex-7">
+            <AcademicsContent
+              background="bgBlueLogo"
+              stage={seniorSchoolContent.stage}
+              classType={seniorSchoolContent.classType}
+              firstParagraph={seniorSchoolContent.firstParagraph}
+              secondParagraph={seniorSchoolContent.secondParagraph}
+              thirdParagraph={seniorSchoolContent.thirdParagraph}
+              list={seniorSchoolContent.listArr}
+            />
+          </div>
+
+          <div className="flex-3 md:m-auto md:pr-30 md:pl-5 ">
+            <AcademicsSubjectTaught subjectArr={seniorSubjectTaught} />
+          </div>
+        </div>
       </div>
       <Footer />
     </>
