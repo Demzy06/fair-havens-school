@@ -11,7 +11,7 @@ const subNavLinkName = [
 
 const allNavSubLinkArr = [
   [
-    "History",
+    // "History",
     "Founders Note",
     "School Pledge And Anthem",
     "Fair Havens At A Glance",
