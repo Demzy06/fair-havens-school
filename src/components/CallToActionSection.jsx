@@ -61,7 +61,7 @@ function CallToActionSection() {
           <Button
             text="Apply Today"
             className={`bg-white p-2 pl-5 pr-5 text-black mt-6 uppercase text-[13px] md:mt-10`}
-            link="/contact"
+            link="/contact-us"
           />
         </div>
       </div>
