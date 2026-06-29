@@ -1,6 +1,6 @@
 import useToTop from "../hooks/useToTop";
 
-import AcademicsContent from "../components/AcademicsContent";
+import CrecheAcademicHighlight from "../components/CrecheAcademicHighlight";
 import CrecheAcademicContent from "../components/CrecheAcademicContent";
 import SectionTitle from "../components/SectionTitle";
 import Footer from "../components/Footer";
@@ -45,7 +45,7 @@ function CrecheNurseryPrograms() {
         />
 
         {/* This is the Tailored learning section, had to use the AcademicsContent for it, props dont really match , but it works   */}
-        <AcademicsContent
+        <CrecheAcademicHighlight
           stage={individualLearning.header}
           classType={individualLearning.subHeader}
           firstParagraph={individualLearning.firstParagraph}
