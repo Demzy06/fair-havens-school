@@ -28,8 +28,9 @@ function GallerySliderOverlay({
         onClick={(e) => onHandleOverlay(e)}
       >
         {/* Image */}
-        <div className=" w-fit md:p-">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className=" w-fit">
+          {/* <div className="absolute top-1/2 w-[90%] m-auto"> */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]">
             <button
               className="absolute -left-4.5 top-1/2 -translate-y-1/2 text-white z-100 text-2xl p-2.5 rounded-full bg-white/30 border-[#b8b8b8] border-[0.5px]"
               onClick={() => decreaseImgNum()}
