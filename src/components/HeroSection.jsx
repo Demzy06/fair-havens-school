@@ -14,9 +14,10 @@ function HeroSection() {
           ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
       >
         <div>
-          <h1 className="w-[80%] m-auto mb-6 uppercase whiteColorShadow md:text-7xl">
+          <h1 className="w-[80%] m-auto mb-1.5 uppercase whiteColorShadow md:text-7xl">
             Fair Havens Schools
           </h1>
+          <h3 className="upppercase mb-5 text-white font-bold">(Govt Appr)</h3>
           <p className="w-[80%] m-auto mb-6 font-medium text-white md:text-2xl ">
             Inspiring Excellence, Building Character, Shaping the Future
           </p>
