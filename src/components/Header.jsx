@@ -34,14 +34,11 @@ function Header() {
         >
           {navIsOpen ? "" : <Logo />}
 
-          <div className="hidden md:flex  ">
+          {/* <div className="hidden md:flex  ">
             <NavBar navIsOpen={navIsOpen} />
-          </div>
+          </div> */}
 
-          <button
-            onClick={() => setNavISOpen(!navIsOpen)}
-            className="ml-auto md:hidden "
-          >
+          <button onClick={() => setNavISOpen(!navIsOpen)} className="ml-auto ">
             {navIsOpen ? (
               <CancelIcon height="2.5em" />
             ) : (

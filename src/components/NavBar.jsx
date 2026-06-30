@@ -24,19 +24,38 @@ const allNavSubLinkArr = [
 
 function NavBar({ navIsOpen }) {
   return (
+    // <nav
+    //   className={`h-screen md:h-fit bg-white ${navIsOpen ? "navAnimation" : ""} `}
+    // >
+    //   <ul className="text-center text-[14px] w-[95%] m-auto font-[poppins] md:flex md:flex-row md:justify-evenly ">
+    //     {subNavLinkName.map((name, i) => (
+    //       <Nav navName={name.toUpperCase()} navSubLinks={allNavSubLinkArr[i]} />
+    //     ))}
+    //     <li className="mb-4 w-[92.7%]">
+    //       <Link to="/gallery" className="uppercase ">
+    //         Gallery
+    //       </Link>
+    //     </li>
+    //     <li className=" w-[92.6%]">
+    //       <Link to="/contact-us" className="uppercase">
+    //         Contact
+    //       </Link>
+    //     </li>
+    //   </ul>
+    // </nav>
     <nav
       className={`h-screen md:h-fit bg-white ${navIsOpen ? "navAnimation" : ""} `}
     >
-      <ul className="text-center text-[14px] w-[95%] m-auto font-[poppins] md:flex md:flex-row md:justify-evenly ">
+      <ul className="text-center text-[14px] w-[95%] m-auto font-[poppins] ">
         {subNavLinkName.map((name, i) => (
           <Nav navName={name.toUpperCase()} navSubLinks={allNavSubLinkArr[i]} />
         ))}
-        <li className="mb-4 w-[92.7%]">
+        <li className="mb-4 w-[92.7%] md:w-[98%]">
           <Link to="/gallery" className="uppercase ">
             Gallery
           </Link>
         </li>
-        <li className=" w-[92.6%]">
+        <li className=" w-[92.6%] md:w-[98%]">
           <Link to="/contact-us" className="uppercase">
             Contact
           </Link>
