@@ -28,21 +28,21 @@ function GallerySliderOverlay({
         onClick={(e) => onHandleOverlay(e)}
       >
         {/* Image */}
-        <div className=" w-fit">
+        <div className="w-fit">
           {/* <div className="absolute top-1/2 w-[90%] m-auto"> */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[80%]">
             <button
-              className="absolute -left-4.5 top-1/2 -translate-y-1/2 text-white z-100 text-2xl p-2.5 rounded-full bg-white/30 border-[#b8b8b8] border-[0.5px]"
+              className="absolute -left-4.5 md:left-1/6 top-1/2 -translate-y-1/2 text-white z-100 text-2xl p-2.5 rounded-full bg-white/30 border-[#b8b8b8] border-[0.5px]"
               onClick={() => decreaseImgNum()}
             >
               <img src={ArrowIcon} className="w-[1.8rem] h-[1.8rem]" />
             </button>
             <img
               src={galleryImages[imageNum - 1].src}
-              className="m-auto z-10 rounded-2xl"
+              className="m-auto z-10 rounded-2xl md:w-[50rem] md:h-[42rem]"
             />
             <button
-              className="absolute justify-center -right-4.5 top-1/2 -translate-y-1/2 text-white z-100 text-2xl transform-[rotate(180deg)] p-2.5 rounded-full bg-white/20 border-[#b8b8b8] border-[0.5px]"
+              className="absolute justify-center -right-4.5 md:right-1/6 top-1/2 -translate-y-1/2 text-white z-100 text-2xl transform-[rotate(180deg)] p-2.5 rounded-full bg-white/20 border-[#b8b8b8] border-[0.5px]"
               onClick={() => increaseImgNum()}
             >
               <img src={ArrowIcon} className="w-[1.8rem] h-[1.8rem]" />
