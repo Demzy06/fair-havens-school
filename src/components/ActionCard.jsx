@@ -18,9 +18,12 @@ function ActionCard({ info }) {
     <Link to={info.linkTo}>
       <div
         ref={divRef}
-        className={`p-26 text-center mb-5 border-gray border-solid border-2 rounded-xl relative transition-all duration-700 md:p-0 md:h-60 md:w-90 ${
+        className={`flex justify-center p-0 h-60 text-center mb-5 border-gray border-solid border-2 rounded-xl relative transition-all duration-700 md:p-0 md:h-60 md:w-90 ${
           divIsInVew ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
+        // className={`p-26 text-center mb-5 border-gray border-solid border-2 rounded-xl relative transition-all duration-700 md:p-0 md:h-60 md:w-90 ${
+        //   divIsInVew ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        // }`}
       >
         {/* Background image */}
         <div
@@ -35,8 +38,8 @@ function ActionCard({ info }) {
         <div className="absolute inset-0 bg-[#0F2D52]/40 rounded-xl" />
 
         {/* Content */}
-        <div className="md:h-full flex ">
-          <h3 className="w-fit m-auto relative z-1 whiteColorShadow">
+        <div className="md:h-full flex  ">
+          <h3 className="w-fit m-auto relative z-1 whiteColorShadow h-fit">
             {info.heading}
           </h3>
         </div>
