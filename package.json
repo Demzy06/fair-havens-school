@@ -20,7 +20,6 @@
     "@iconify-react/quill": "^1.0.2",
     "@iconify-react/tabler": "^1.0.9",
     "@tailwindcss/vite": "^4.3.0",
-    "@vercel/analytics": "^2.0.1",
     "framer-motion": "^12.40.0",
     "motion": "^12.40.0",
     "react": "^19.2.6",
@@ -29,7 +28,8 @@
     "react-intersection-observer": "^10.0.3",
     "react-router": "^7.16.0",
     "react-toastify": "^11.1.0",
-    "tailwindcss": "^4.3.0"
+    "tailwindcss": "^4.3.0",
+    "vite-plugin-sitemap": "^0.8.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
