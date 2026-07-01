@@ -40,12 +40,12 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-white mb-4">
               Contact Us
             </h3>
-            <span className=" flex h-8 items-center">
+            <span className=" flex h-8 items-center ">
               <LocationFilledIcon height="1.5em" />
-              <p className="ml-1">Lagos, Nigeria</p>
+              <p className="ml-1">Ita Oluwo, Ogijo, Ogun State, Nigeria</p>
             </span>
 
-            <span className=" flex h-8 items-center">
+            <span className=" flex h-8 items-center ">
               <CallIcon height="1.5em" />
               <p className="ml-1"> +234 802 318 2828</p>
             </span>
