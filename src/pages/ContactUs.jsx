@@ -67,8 +67,8 @@ function ContactUs() {
               </div>
             </div>
 
-            <div className="mb-12 flex">
-              <span className="flex items-center p-3.5 rounded-full mr-3 bg-[#E6ECE8]">
+            <div className="mb-12 flex ">
+              <span className="flex items-center p-3 h-12 mt-2 md:mt-0 md:p-3.5 md:h-fit rounded-full mr-3 bg-[#E6ECE8]">
                 <LocationIcon height="1.3em" />
               </span>
               <div>
