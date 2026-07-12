@@ -47,7 +47,10 @@ export default function Footer() {
 
             <span className=" flex h-8 items-center ">
               <CallIcon height="1.5em" />
-              <p className="ml-1"> +234 802 318 2828</p>
+              <span>
+                <p className="ml-1"> +234 802 318 2828</p>
+                <p className="ml-1"> +234 803 506 0903</p>
+              </span>
             </span>
 
             <span className=" flex h-8 items-center">
