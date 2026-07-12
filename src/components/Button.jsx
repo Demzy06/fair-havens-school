@@ -10,7 +10,7 @@ function Button({ text, className, link }) {
     <Link to={link}>
       <button
         ref={btnRef}
-        className={`${className} transition-all duration-700 ${
+        className={`cursor-pointer ${className} transition-all duration-700 ${
           btnIsInVew ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
