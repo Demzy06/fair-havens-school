@@ -5,6 +5,8 @@ import useToTop from "../hooks/useToTop";
 
 import MailOutlineRoundedIcon from "@iconify-react/material-symbols/mail-outline-rounded";
 import ClockIcon from "@iconify-react/tabler/clock";
+import LocationIcon from "@iconify-react/boxicons/location";
+
 function ContactUs() {
   useToTop();
 
@@ -37,7 +39,7 @@ function ContactUs() {
               </p>
             </div>
 
-            <div className="xoo mb-4 flex mt-5">
+            <div className=" mb-4 flex mt-5">
               <span className="flex items-center p-3.5 rounded-full mr-3 bg-[#E6ECE8]">
                 <MailOutlineRoundedIcon height="1.3em" />
               </span>
@@ -51,7 +53,7 @@ function ContactUs() {
               </div>
             </div>
 
-            <div className="zoo mb-12 flex">
+            <div className=" mb-4 flex">
               <span className="flex items-center p-3.5 rounded-full mr-3 bg-[#E6ECE8]">
                 <ClockIcon height="1.3em" />
               </span>
@@ -61,6 +63,20 @@ function ContactUs() {
                 </h4>
                 <p className="text-[14px] md:text-[16px]">
                   Monday - Friday: 8:00am - 4:00pm
+                </p>
+              </div>
+            </div>
+
+            <div className="mb-12 flex">
+              <span className="flex items-center p-3.5 rounded-full mr-3 bg-[#E6ECE8]">
+                <LocationIcon height="1.3em" />
+              </span>
+              <div>
+                <h4 className="text-[14px] font-medium md:text-[17px]">
+                  Address
+                </h4>
+                <p className="text-[14px] md:text-[16px]">
+                  Plot 2 & 4 Road D Ladugba Estate, Ita Oluwo, Ogijo, Ogun State
                 </p>
               </div>
             </div>
