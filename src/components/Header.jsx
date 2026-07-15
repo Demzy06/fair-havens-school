@@ -27,7 +27,7 @@ function Header() {
     <>
       <header
         ref={headerEl}
-        className={`${!navIsOpen ? `${isSticky && "fixed bg-white transition-all duration-300 ease-in-out"}` : "fixed"} absolute pr-0 pl-0 w-full left-0 z-100 md:flex md:justify-between md:items-center md:pt-2 md:pb-0 md:pl-10 md:pr-10 `}
+        className={`${!navIsOpen ? `${isSticky && "fixed bg-white transition-all duration-300 ease-in-out"}` : "fixed"} absolute pr-0 pl-0 w-full left-0 z-100 md:flex md:justify-between md:items-center md:pt-3.5 md:pb-0 md:pl-10 md:pr-10 `}
       >
         <div
           className={`flex justify-between pr-2 pl-2 p-1 ${navIsOpen ? "bg-white" : ""} md:justify-between md:items-center `}
