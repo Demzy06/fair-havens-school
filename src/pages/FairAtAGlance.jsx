@@ -1,8 +1,8 @@
 import Footer from "../components/Footer";
 import SectionTitle from "../components/SectionTitle";
 
-import VisionStatementImg from "../assets/vision-pic.jpeg";
-import MissionStatementImg from "../assets/mission-pic.jpeg";
+import VisionStatementImg from "../assets/vision-pic.webp";
+import MissionStatementImg from "../assets/mission-pic.webp";
 import SchoolStatement from "../components/SchoolStatement";
 import useToTop from "../hooks/useToTop";
 

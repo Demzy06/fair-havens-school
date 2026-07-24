@@ -20,7 +20,7 @@
 
 @layer components {
   .hey {
-    background-image: url("/src/assets/building-1.jpeg");
+    background-image: url("/src/assets/building-1.webp");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -30,14 +30,14 @@
   }
 
   .bgBlueLogo {
-    @apply text-gray-200 bg-[linear-gradient(rgba(77,166,255,0.9),rgba(77,166,255,0.9)),url(/src/assets/logos-pic.jpg)] bg-contain bg-center bg-repeat;
+    @apply text-gray-200 bg-[linear-gradient(rgba(77,166,255,0.9),rgba(77,166,255,0.9)),url(/src/assets/logos-pic.webp)] bg-contain bg-center bg-repeat;
   }
 }
 
 @layer utilities {
   .touch {
     background-image:
-      linear-gradient(rgb(15, 45, 82, 0.4)), url("/src/assets/building-3.jpg");
+      linear-gradient(rgb(15, 45, 82, 0.4)), url("/src/assets/building-3.webp");
 
     background-size: cover;
     background-position: center;
@@ -46,7 +46,7 @@
   .actionCardSection {
     background-image:
       linear-gradient(rgba(77, 166, 255, 1), rgba(77, 166, 255, 0.2)),
-      url("/src/assets/classroom-pic.jpeg");
+      url("/src/assets/classroom-pic.webp");
     /* url("/src/assets/building-3.jpg"); */
 
     background-size: cover;

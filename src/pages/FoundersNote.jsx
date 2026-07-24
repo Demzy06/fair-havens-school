@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import SectionTitle from "../components/SectionTitle";
 
-import FounderImg from "../assets/founder-img.jpeg";
+import FounderImg from "../assets/founder-img.webp";
 import useToTop from "../hooks/useToTop";
 function FoundersNote() {
   useToTop();

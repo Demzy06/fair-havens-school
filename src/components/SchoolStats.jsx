@@ -1,6 +1,6 @@
 import Button from "./Button";
 import Stats from "./Stats";
-import BuildingImg from "../assets/building-2.jpg";
+import BuildingImg from "../assets/building-2.webp";
 import { useInView } from "react-intersection-observer";
 
 function SchoolStats() {

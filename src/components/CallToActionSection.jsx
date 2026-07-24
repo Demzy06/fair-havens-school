@@ -1,5 +1,5 @@
 import Button from "./Button";
-import ClassroomImg from "../assets/building-3.jpg";
+import ClassroomImg from "../assets/building-3.webp";
 import { useInView } from "react-intersection-observer";
 
 function CallToActionSection() {

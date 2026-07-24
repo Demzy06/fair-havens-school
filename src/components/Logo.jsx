@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import logo from "../assets/logo_.png";
+import logo from "../assets/logo_.webp";
 function Logo() {
   return (
     <>
