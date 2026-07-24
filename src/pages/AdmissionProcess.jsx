@@ -13,7 +13,7 @@ const admissionSteps = [
 const steps = [
   {
     stepNumber: 1,
-    step: "Fill and Submit Purchased ",
+    step: "Fill and Submit Purchased Form",
     forewarn: "Please read the information below carefully",
     todo: " To begin the admission process, a payment of 10,000 is required for the purchase of the Admission Form. Parents or guardians are kindly requested to complete the form carefully, ensuring that all information provided is accurate and up to date to enable us to maintain proper records for each applicant.",
   },
