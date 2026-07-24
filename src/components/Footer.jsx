@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-// import LocationIcon from "@iconify-react/mdi/location";
 import LocationFilledIcon from "@iconify-react/boxicons/location-filled";
 import CallIcon from "@iconify-react/material-symbols/call";
 import MailIcon from "@iconify-react/material-symbols/mail";

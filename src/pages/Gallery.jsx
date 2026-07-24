@@ -5,7 +5,7 @@ import SectionTitle from "../components/SectionTitle";
 import Footer from "../components/Footer";
 import GallerySliderOverlay from "../components/GallerySliderOverlay";
 
-const images = import.meta.glob("../assets/gallery/*.{jpg,png,jpeg}", {
+const images = import.meta.glob("../assets/gallery/*.{jpg,png,jpeg,webp}", {
   eager: true,
   import: "default",
 });
@@ -16,14 +16,8 @@ const layoutClasses = [
   "row-span-2 md:row-span-0",
   // "",
   "col-span-2 md:col-span-0",
-  // "",
-  // "col-span-1 row-span-2 md:col-span-0 md:row-span-0",
-  // // "",
-  // "row-span-2 md:row-span-0",
-  // // "",
-  // "col-span-2 md:col-span-0",
-  // // "",
 ];
+
 const galleryImages = Object.entries(images).map(([path, src], index) => ({
   id: index + 1,
   src,
@@ -87,5 +81,3 @@ function Gallery() {
 }
 
 export default Gallery;
-
-// text-[#67B3FF]

@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.webp";
 import AboutOurSchoolCards from "./AboutOurSchoolCards";
 
 const schoolInfoCards = [
@@ -8,11 +7,6 @@ const schoolInfoCards = [
     path: "founders-note",
     text: "A personal message from our founder, sharing the vision, values, and commitment to providing quality education for every child.",
   },
-  // {
-  //   title: "Principal Note",
-  //   path: "principal-note",
-  //   text: "A note from the Managing Director highlighting our goals and dedication to maintaining high standards in teaching, discipline, and student development.",
-  // },
   {
     title: "About Us",
     path: "fair-havens-at-a-glance",

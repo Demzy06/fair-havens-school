@@ -1,5 +1,3 @@
-import AcademicsSubjectTaught from "../components/AcademicsSubjectTaught";
-
 function AcademicsContent({
   stage,
   classType,
@@ -9,7 +7,6 @@ function AcademicsContent({
   background,
   list,
 }) {
-  // console.log(lowerPrimarySubjectTaught);
   return (
     <div
       className={`md:pt-25 md:pb-25 md:pl-30 pt-15 pb-10 pl-5 pr-5  text-[#0F172A] ${background}`}

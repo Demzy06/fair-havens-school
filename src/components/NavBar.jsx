@@ -1,22 +1,10 @@
 import { Link } from "react-router";
 import Nav from "./Nav";
 
-const subNavLinkName = [
-  "About Us",
-  // "Schools",
-  "Academic",
-  "Admissions",
-  "Students",
-];
+const subNavLinkName = ["About Us", "Academic", "Admissions", "Students"];
 
 const allNavSubLinkArr = [
-  [
-    // "History",
-    "Founders Note",
-    "School Pledge And Anthem",
-    "Fair Havens At A Glance",
-  ],
-  // ["Nursery And Primary", "Secondary And Highschool"],
+  ["Founders Note", "School Pledge And Anthem", "Fair Havens At A Glance"],
   ["Secondary Programs", "Primary Programs", "Creche And Nursery Programs"],
   ["Tuition", "Admission Process"],
   ["Co-curricular Activities And Clubs"],

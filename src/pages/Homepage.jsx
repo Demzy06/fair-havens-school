@@ -10,7 +10,6 @@ function Homepage() {
   useToTop();
   return (
     <>
-      {/* <Header /> */}
       <HeroSection />
       <main>
         <ActionCardsSection />

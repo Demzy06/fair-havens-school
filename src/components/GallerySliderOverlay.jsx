@@ -12,12 +12,10 @@ function GallerySliderOverlay({
   function increaseImgNum() {
     if (imageNum === galleryImages.length) return;
     setImageNum((imageNum) => imageNum + 1);
-    console.log(imageNum);
   }
   function decreaseImgNum() {
     if (imageNum === 1) return;
     setImageNum((imageNum) => imageNum - 1);
-    console.log(imageNum);
   }
 
   return (

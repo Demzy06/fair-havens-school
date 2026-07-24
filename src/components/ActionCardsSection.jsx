@@ -1,11 +1,10 @@
 import ActionCard from "./ActionCard";
-// import useIntersectionObserver from "../hooks/useIntersectionObserver";
 import { useInView } from "react-intersection-observer";
 
-import FlyerImg from "../assets/image.png";
-import img1 from "../assets/excitedKids.jpeg";
-import img2 from "../assets/comp-lab-pic.jpeg";
-import img3 from "../assets/classroom-pic.jpeg";
+import FlyerImg from "../assets/image.webp";
+import img1 from "../assets/excitedKids.webp";
+import img2 from "../assets/comp-lab-pic.webp";
+import img3 from "../assets/classroom-pic.webp";
 
 const divsInfo = [
   {
@@ -39,10 +38,6 @@ function ActionCardsSection() {
     triggerOnce: true,
   });
 
-  // const [isVisible, refs] = useIntersectionObserver({
-  //   root: null,
-  //   threshold: 0.5,
-  // });
   return (
     <section className="actionCardSection pt-12 ">
       <div className="text-center mb-6  pl-4 pr-4">

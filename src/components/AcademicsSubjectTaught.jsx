@@ -22,4 +22,3 @@ function AcademicsSubjectTaught({ subjectArr }) {
 
 export default AcademicsSubjectTaught;
 
-// md:pt-25 md:pb-25 md:pl-20

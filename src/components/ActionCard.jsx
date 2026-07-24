@@ -1,18 +1,12 @@
 import { Link } from "react-router";
 import { useInView } from "react-intersection-observer";
 
-// import useIntersectionObserver from "../hooks/useIntersectionObserver";
-
 function ActionCard({ info }) {
   const { ref: divRef, inView: divIsInVew } = useInView({
     root: null,
     threshold: 0.5,
     triggerOnce: true,
   });
-  // const [isVisible, refs] = useIntersectionObserver({
-  //   root: null,
-  //   threshold: 0.5,
-  // });
 
   return (
     <Link to={info.linkTo}>
@@ -21,9 +15,6 @@ function ActionCard({ info }) {
         className={`flex justify-center p-0 h-60 text-center mb-5 border-gray border-solid border-2 rounded-xl relative transition-all duration-700 md:p-0 md:h-60 md:w-90 ${
           divIsInVew ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
-        // className={`p-26 text-center mb-5 border-gray border-solid border-2 rounded-xl relative transition-all duration-700 md:p-0 md:h-60 md:w-90 ${
-        //   divIsInVew ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        // }`}
       >
         {/* Background image */}
         <div
