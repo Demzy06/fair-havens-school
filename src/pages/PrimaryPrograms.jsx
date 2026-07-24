@@ -2,9 +2,9 @@ import useToTop from "../hooks/useToTop";
 
 import AcademicsContent from "../components/AcademicsContent";
 import AcademicsSubjectTaught from "../components/AcademicsSubjectTaught";
-import AdmissionProcessContent from "../components/AdmissionProcessContent";
 import Footer from "../components/Footer";
 import SectionTitle from "../components/SectionTitle";
+
 const lowerPrimarySchoolContent = {
   stage: "Lower Primary School",
   classType: "Year 1 To 3",
