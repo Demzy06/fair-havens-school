@@ -3,6 +3,8 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 function Form() {
   const form = useRef();
+  const input = useRef([]);
+
   const sendEmail = (e) => {
     const topRight = () => {
       toast.success("Form sent successfully!", {
@@ -33,6 +35,13 @@ function Form() {
         },
       );
   };
+
+  const pushRef = (el) => input.current.push(el);
+
+  function clearInputs() {
+    input.current.forEach((el) => (el.value = ""));
+  }
+
   return (
     <>
       <ToastContainer />
@@ -45,12 +54,19 @@ function Form() {
             We'll respond within 24 hours
           </p>
         </div>
-        <form ref={form} onSubmit={sendEmail}>
+        <form
+          ref={form}
+          onSubmit={(e) => {
+            sendEmail(e);
+            clearInputs();
+          }}
+        >
           <div>
             <label className="block mb-1 uppercase text-[13px] font-medium md:text-[15px]">
               First Name *
             </label>
             <input
+              ref={pushRef}
               required
               type="text"
               name="user_firstname"
@@ -61,6 +77,7 @@ function Form() {
               Last Name *
             </label>
             <input
+              ref={pushRef}
               required
               type="text"
               name="user_lastname"
@@ -72,6 +89,7 @@ function Form() {
             Phone Number *
           </label>
           <input
+            ref={pushRef}
             required
             type="phone"
             name="user_phone"
@@ -82,6 +100,7 @@ function Form() {
             Email *
           </label>
           <input
+            ref={pushRef}
             required
             type="email"
             name="user_email"
@@ -92,13 +111,14 @@ function Form() {
             Message *
           </label>
           <textarea
+            ref={pushRef}
             name="message"
             className="border w-full rounded-md p-2.5 text-[14px] mb-4 md:p-3.5 md:mt-1"
             placeholder="How can we help you?"
             rows="5"
           />
           <input
-            required
+            // required
             type="submit"
             value="Send Message"
             className="block w-full uppercase font-bold pt-3 pb-3 bg-[#DB5435] rounded-md text-white"
